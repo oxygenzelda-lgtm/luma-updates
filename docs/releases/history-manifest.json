@@ -1,0 +1,660 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-03",
+  "cloudStatus": "not_uploaded",
+  "missingRequestedVersions": [
+    "0.01: no retained package found in delivery"
+  ],
+  "artifacts": [
+    {
+      "version": "1.0.0",
+      "build": 1,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": true,
+      "bundledTestSamples": true,
+      "sha256": "d409a69a00a632db2b5577a25f3e2be06347b164efeb3cd62b7b8bd763817069",
+      "bytes": 174708083,
+      "originalFile": "Luma-local-validation-debug.apk",
+      "aliases": [],
+      "assetName": "Luma-1.0.0-build1-Android-multi-debug.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.0.0",
+      "build": 1,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "7e33a26e8550afffbb9671ae98f2a7dffaa4ac101bc870f4831d06042852c6c7",
+      "bytes": 12119753,
+      "originalFile": "Luma-Windows-validation-before-desktop-input.zip",
+      "aliases": [],
+      "assetName": "Luma-1.0.0-build1-Windows-x64-r2.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.0.0",
+      "build": 1,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "e1927e2bb32b38d53b20ee4dfa678845120f0ed11231b1db9dce4d7bb9dfce68",
+      "bytes": 12134766,
+      "originalFile": "Luma-Windows-validation-before-glass-ui.zip",
+      "aliases": [],
+      "assetName": "Luma-1.0.0-build1-Windows-x64-r3.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.0.0",
+      "build": 1,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "ce0c4199a380c64f4404cdae7dee37ad68cd35a42cd4c3d5a8b6c1023d3e2b6e",
+      "bytes": 12133456,
+      "originalFile": "Luma-Windows-validation-before-image-restore.zip",
+      "aliases": [],
+      "assetName": "Luma-1.0.0-build1-Windows-x64-r4.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.0.0",
+      "build": 1,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "c218469cd5d7515053630b9ed28e1d3ad52effa6735e9219fed8a7a622d29b1b",
+      "bytes": 12133221,
+      "originalFile": "Luma-Windows-validation-before-image-trace.zip",
+      "aliases": [],
+      "assetName": "Luma-1.0.0-build1-Windows-x64-r5.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.0.0",
+      "build": 1,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "9fe4c87301240667ae017b3d5c5ad53b4db6acf027ad2365e0b9b1ef7dc81d4b",
+      "bytes": 12130648,
+      "originalFile": "Luma-Windows-validation-before-comic-fit.zip",
+      "aliases": [],
+      "assetName": "Luma-1.0.0-build1-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.0.1",
+      "build": 2,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "a7e56273eec499b848ec46a70128bcc2f415e5f808fa77a44be33da75e376272",
+      "bytes": 18167850,
+      "originalFile": "Luma-Android-before-motion-glass-1.0.1.apk",
+      "aliases": [],
+      "assetName": "Luma-1.0.1-build2-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.0.1",
+      "build": 2,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "b7575dc29f2678ef53831905bcd9bfd0217d82470ea14fbc2ef1cfe16388a50b",
+      "bytes": 12331129,
+      "originalFile": "Luma-Windows-before-system-redesign-1.0.1.zip",
+      "aliases": [],
+      "assetName": "Luma-1.0.1-build2-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.0.2",
+      "build": 3,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "96fcfef301f532cd69c8121aa8f9f8e87ca8c4a9841aa035de16e31cff90ae88",
+      "bytes": 18102314,
+      "originalFile": "Luma-Android-before-system-redesign-1.0.2.apk",
+      "aliases": [],
+      "assetName": "Luma-1.0.2-build3-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.1.0",
+      "build": 4,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "fac8ac96ea6837237a5b339dc1d481c3929fa3643a2a6f4200545228865d5bd4",
+      "bytes": 18235326,
+      "originalFile": "Luma-Android-before-cover-motion-1.1.0.apk",
+      "aliases": [],
+      "assetName": "Luma-1.1.0-build4-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.1.0",
+      "build": 4,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "98afa704456fe0c315e926671a86d41df4a5a1ead88b47781048637789994ca0",
+      "bytes": 12356499,
+      "originalFile": "Luma-Windows-before-cover-motion-1.1.0.zip",
+      "aliases": [],
+      "assetName": "Luma-1.1.0-build4-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.1.1",
+      "build": 5,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "f790bdb171dafa39d6fcf0465ad18ccc5c77494fffa748a0c1726afc3478db6b",
+      "bytes": 18235446,
+      "originalFile": "Luma-Android-before-motion-polish-1.1.1.apk",
+      "aliases": [],
+      "assetName": "Luma-1.1.1-build5-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.1.1",
+      "build": 5,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "eb79a31ce053cc61f5d62d64e44144b5a2119ec9cafa110cfbf1dc036cee35dc",
+      "bytes": 12361209,
+      "originalFile": "Luma-Windows-before-motion-polish-1.1.1.zip",
+      "aliases": [],
+      "assetName": "Luma-1.1.1-build5-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.1.2",
+      "build": 6,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "4b160b1467ca0cb09eff6b3468fb6d188467c694720f5431edeb98dfcd725c86",
+      "bytes": 18169910,
+      "originalFile": "Luma-Android-before-scroll-polish-1.1.2.apk",
+      "aliases": [],
+      "assetName": "Luma-1.1.2-build6-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.1.2",
+      "build": 6,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "6a9a8fdad84beed91a57bb53333025ea6a321afe6517294787302433a70fc7ac",
+      "bytes": 12330227,
+      "originalFile": "Luma-Windows-before-ui-unify-1.1.2.zip",
+      "aliases": [],
+      "assetName": "Luma-1.1.2-build6-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.1.3",
+      "build": 7,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "d3ff7aafc23e537f075eaa7558b6fdc1587453fba9c5381799d2f4c0e8dc050a",
+      "bytes": 18169910,
+      "originalFile": "Luma-Android-before-shelf-density-1.1.3.apk",
+      "aliases": [],
+      "assetName": "Luma-1.1.3-build7-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.1.4",
+      "build": 8,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "63798f98781f2adbb28d449c48f43de8e89c5b64b00d67329dd41a516c2fb7cf",
+      "bytes": 18169910,
+      "originalFile": "Luma-Android-before-batch-import-1.1.4.apk",
+      "aliases": [],
+      "assetName": "Luma-1.1.4-build8-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.1.5",
+      "build": 9,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "85d9671bfed8cb3b27109c65d0016e66bc78d4503a1cd26971ad471cde69dd52",
+      "bytes": 12338999,
+      "originalFile": "Luma-Windows-before-batch-import-1.1.5.zip",
+      "aliases": [],
+      "assetName": "Luma-1.1.5-build9-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.2.0",
+      "build": 10,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "d3393c01e743db83979da17d7e1deeb1a281717b6df58511acc88da724a0b179",
+      "bytes": 19218642,
+      "originalFile": "Luma-Android-before-reader-polish-1.2.0.apk",
+      "aliases": [],
+      "assetName": "Luma-1.2.0-build10-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.2.0",
+      "build": 10,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "8dd65f47b41cb07112fe99615ed4646c326e067631e4d66e4139d6db697be32b",
+      "bytes": 12757769,
+      "originalFile": "Luma-Windows-before-reader-sync-1.2.0.zip",
+      "aliases": [],
+      "assetName": "Luma-1.2.0-build10-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.2.1",
+      "build": 11,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "106c732c5109886dbcfac07445ca05e1aa9cd888ff9f5ec593330dbf7b452c81",
+      "bytes": 19218638,
+      "originalFile": "Luma-Android-before-reader-sync-1.2.1.apk",
+      "aliases": [],
+      "assetName": "Luma-1.2.1-build11-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.2.2",
+      "build": 12,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "d78d20f981f7dacc31dcfc8d016dc0ba3904b01782724b562dea5e23cdcbf893",
+      "bytes": 19152994,
+      "originalFile": "Luma-Android-before-reading-settings-1.2.2.apk",
+      "aliases": [],
+      "assetName": "Luma-1.2.2-build12-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.2.2",
+      "build": 12,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "f978aa5023673b9fbe98fa8a1b0b2c1c471f49ef96d9155d0befa4b6791a8290",
+      "bytes": 12751840,
+      "originalFile": "Luma-Windows-before-custom-frame-1.2.2.zip",
+      "aliases": [],
+      "assetName": "Luma-1.2.2-build12-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.2.3",
+      "build": 13,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "24fbf180a3b3239781a6fb7e6ea894f1af2ea0a47a4af139f82bcfcd4d3b2afb",
+      "bytes": 12771770,
+      "originalFile": "Luma-Windows-before-reading-settings-1.2.3.zip",
+      "aliases": [],
+      "assetName": "Luma-1.2.3-build13-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.3.0",
+      "build": 14,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "5a3551b1e6254c6ffa782afe397b5491b8ce6295df7b690eb2dd5227630f46d7",
+      "bytes": 19349946,
+      "originalFile": "Luma-Android-before-novel-typography-1.3.0.apk",
+      "aliases": [],
+      "assetName": "Luma-1.3.0-build14-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.3.0",
+      "build": 14,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "e32c4512768099a2ad028e7bb360b9ac55e32f62d1b94e9f37e6fd382b2cc2d9",
+      "bytes": 12825858,
+      "originalFile": "Luma-Windows-before-novel-typography-1.3.0.zip",
+      "aliases": [],
+      "assetName": "Luma-1.3.0-build14-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.4.0",
+      "build": 15,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "c269a3289412b5605491349a6bf68787c9f0b8e65f260ec9a7f69e936f98666c",
+      "bytes": 50576436,
+      "originalFile": "Luma-Android-before-smart-organise-1.4.0.apk",
+      "aliases": [],
+      "assetName": "Luma-1.4.0-build15-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.4.0",
+      "build": 15,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "f3d8045d7e76368c7a3cf9451f9bee68b0edc7fca46346223b3de34485fb464f",
+      "bytes": 43986910,
+      "originalFile": "Luma-Windows-before-smart-organise-1.4.0.zip",
+      "aliases": [],
+      "assetName": "Luma-1.4.0-build15-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.5.0",
+      "build": 16,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "43b8417eb53aa0e59b9f1a11c179020a2eaf088e9abbfb4184eb3922c0ca1695",
+      "bytes": 50511640,
+      "originalFile": "Luma-Android-before-formal-catalog-1.5.0.apk",
+      "aliases": [],
+      "assetName": "Luma-1.5.0-build16-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.5.0",
+      "build": 16,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "a6852caab923c1c35dccb8904f4ddd577cf193f50d20d85378787de336ad22cb",
+      "bytes": 43970544,
+      "originalFile": "Luma-Windows-before-formal-catalog-1.5.0.zip",
+      "aliases": [],
+      "assetName": "Luma-1.5.0-build16-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.6.0",
+      "build": 17,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": false,
+      "sha256": "5f58d594fd8974cf3caf2466242b774a03f5b26dc567c89d4319d506ac4fd3d1",
+      "bytes": 50508163,
+      "originalFile": "Luma-1.6.0-Android-arm64.apk",
+      "aliases": [],
+      "assetName": "Luma-1.6.0-build17-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.6.0",
+      "build": 17,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "72ec3ee67040a51ac74ae768ae39142859a592f4fea4a2a3fc502d288e609046",
+      "bytes": 43961975,
+      "originalFile": "Luma-1.6.0-Windows-x64.zip",
+      "aliases": [],
+      "assetName": "Luma-1.6.0-build17-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null
+    },
+    {
+      "version": "1.7.0",
+      "build": 18,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "debug": false,
+      "bundledTestSamples": false,
+      "sha256": "70433cd8d741d3ed30f0c737c696d0b51e9fb3052a6b3515443f5cddc820bd89",
+      "bytes": 50771515,
+      "originalFile": "Luma-1.7.0-Android-arm64.apk",
+      "aliases": [
+        "Luma-Android-glass.apk"
+      ],
+      "assetName": "Luma-1.7.0-build18-Android-multi.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null,
+      "releaseAssetName": "Luma-1.7.0-Android-arm64.apk"
+    },
+    {
+      "version": "1.7.0",
+      "build": 18,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": true,
+      "sha256": "52c08a3805e88b5dc2e5baec75c7ef42b913f7f93c54ab65eaaaf6cdd5fa45bf",
+      "bytes": 44129926,
+      "originalFile": "Luma-1.7.0-Windows-x64.zip",
+      "aliases": [
+        "Luma-Windows-validation.zip"
+      ],
+      "assetName": "Luma-1.7.0-build18-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "prepared_not_uploaded",
+      "releaseUrl": null,
+      "releaseAssetName": "Luma-1.7.0-Windows-x64.zip"
+    }
+  ]
+}
