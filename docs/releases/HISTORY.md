@@ -8,19 +8,19 @@
 
 | 版本 | 记录日期 | 主要变化 | 留存平台 | 安装包数 | 云端状态 |
 |---|---|---|---|---:|---|
-| 1.0.0 | 2026-09-30 / 2026-10-01 | 本地阅读验证与早期修复 | Android、Windows | 6 | 未上传 / 待核对 |
-| 1.0.1 | 2026-10-01 | 统一玻璃书架与主题 | Android、Windows | 2 | 未上传 / 待核对 |
-| 1.0.2 | 2026-10-01 | 手机玻璃动效与紧凑布局 | Android | 1 | 未上传 / 待核对 |
-| 1.1.0 | 2026-10-01 | 系统风格整体重设计 | Android、Windows | 2 | 未上传 / 待核对 |
-| 1.1.1 | 2026-10-01 | 封面来源展开与浮动导航 | Android、Windows | 2 | 未上传 / 待核对 |
-| 1.1.2 | 2026-10-01 | 圆角与连续动效细化 | Android、Windows | 2 | 未上传 / 待核对 |
-| 1.1.3 | 2026-10-01 | 手机滚动边界与圆润展开 | Android | 1 | 未上传 / 待核对 |
-| 1.1.4 | 2026-10-01 | 手机书架两列与三列 | Android | 1 | 未上传 / 待核对 |
-| 1.1.5 | 2026-10-01 / 2026-10-02 | Windows 视觉与键鼠交互统一 | Windows | 1 | 未上传 / 待核对 |
-| 1.2.0 | 2026-10-02 | 批量导入与本地内容筛选 | Android、Windows | 2 | 未上传 / 待核对 |
-| 1.2.1 | 2026-10-02 | 手机继续阅读与阅读工具栏衔接 | Android | 1 | 未上传 / 待核对 |
-| 1.2.2 | 2026-10-02 | 标题闪线修复与桌面阅读动效 | Android、Windows | 2 | 未上传 / 待核对 |
-| 1.2.3 | 2026-10-02 | Windows 独立软件窗口框架 | Windows | 1 | 未上传 / 待核对 |
+| 1.0.0 | 2026-09-30 / 2026-10-01 | 本地阅读验证与早期修复 | Android、Windows | 6 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.0) |
+| 1.0.1 | 2026-10-01 | 统一玻璃书架与主题 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.1) |
+| 1.0.2 | 2026-10-01 | 手机玻璃动效与紧凑布局 | Android | 1 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.2) |
+| 1.1.0 | 2026-10-01 | 系统风格整体重设计 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.0) |
+| 1.1.1 | 2026-10-01 | 封面来源展开与浮动导航 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.1) |
+| 1.1.2 | 2026-10-01 | 圆角与连续动效细化 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.2) |
+| 1.1.3 | 2026-10-01 | 手机滚动边界与圆润展开 | Android | 1 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.3) |
+| 1.1.4 | 2026-10-01 | 手机书架两列与三列 | Android | 1 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.4) |
+| 1.1.5 | 2026-10-01 / 2026-10-02 | Windows 视觉与键鼠交互统一 | Windows | 1 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.5) |
+| 1.2.0 | 2026-10-02 | 批量导入与本地内容筛选 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.0) |
+| 1.2.1 | 2026-10-02 | 手机继续阅读与阅读工具栏衔接 | Android | 1 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.1) |
+| 1.2.2 | 2026-10-02 | 标题闪线修复与桌面阅读动效 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.2) |
+| 1.2.3 | 2026-10-02 | Windows 独立软件窗口框架 | Windows | 1 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.3) |
 | 1.3.0 | 2026-10-02 | 阅读状态、黑色模式与字体设置 | Android、Windows | 2 | 未上传 / 待核对 |
 | 1.4.0 | 2026-10-02 | 离线中文字体与小说排版 | Android、Windows | 2 | 未上传 / 待核对 |
 | 1.5.0 | 2026-10-02 | 设置统一与自动智能整理 | Android、Windows | 2 | 未上传 / 待核对 |
