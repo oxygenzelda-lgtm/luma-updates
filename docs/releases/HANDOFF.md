@@ -6,6 +6,8 @@
 
 - Luma 是个人本地小说、轻小说和漫画阅读器，无广告。本地阅读不要求账号。
 - Android 与 Windows 保持统一主题和动效；Android 用触摸与浮动导航，Windows 用键鼠、侧栏、快捷键和自定义窗口框架。
+- 手机偏好HyperOS/Miuix风格的透明玻璃、紧凑布局与统一圆角。底栏和阅读工具栏抬高适配安全区，图标/文字等宽对齐，选中块与外框弧度协调，避免拖尾叠层。
+- 开书、整条继续阅读、发现卡片和设置尽量从点击来源展开，返回回到来源。动效既不能拖沓也不能生硬闪出；工具栏开关保持正文尺寸和位置，隐藏后不接收点击或焦点。
 - 发现 → 书架 → 设置，默认发现。书架顶部分类与导入，随后搜索与筛选、紧凑继续阅读、书籍列表。
 - 手机每排两本或三本可选，默认两本。图片保持比例。整条继续阅读可点击，从来源展开并返回。
 - 阅读状态最近7天为阅读中，超过7天为阅读过。封面不显示重复悬停书名。
@@ -36,7 +38,7 @@ Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 lum
 
 目标仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。当前实际发布状态以 history-manifest.json 和仓库网页为准；写了目标地址不表示仓库已创建或附件已上线。
 
-归档时GitHub CLI首次直连OAuth超时。已确认现有本地代理能访问GitHub，CLI登录正在等待用户完成设备页面授权。认证状态用CLI auth status核对，授权后运行tools/publish_history.py；不能把浏览器登录当作CLI授权。验证码和凭据不写入交接文档。
+GitHub CLI已授权，更新仓库已创建，历史附件正在逐版本上传。tools/publish_history.py可核对并补传缺失附件；已发布状态以当前history-manifest.json为准。凭据不写入交接文档。
 
 发布18个版本的独立Release，历史版本不设为Latest，1.7.0为最新正式版本。最新Release必须含原名称 Luma-1.7.0-Android-arm64.apk、Luma-1.7.0-Windows-x64.zip 和 luma-update.json。清单包含version、build、平台附件URL、大小和SHA256。修改附件名时同步修改清单。
 
@@ -55,6 +57,8 @@ Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 lum
 3. 同步实际云端链接和验证结果到历史索引及交接文件。
 4. 完成Android/Windows实机检查，尤其是设置返回、简介编辑、书源失败处理和更新安装。
 5. 新功能前先明确范围；持续给简短进度，不凭过时记录声称当前验证通过。
+
+发布后的状态由tools/publish_history.py维护。不要直接重跑tools/archive_history.py或tools/prepare_github_release.py来覆盖当前索引：它们用于初始盘点/准备，可能把已发布状态及发布时间重置为未发布。新增版本时先保留旧索引，再增量整理。
 
 ## 给新窗口的首条消息
 
