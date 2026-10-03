@@ -18,7 +18,7 @@
 
 ## 当前实现
 
-Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 luma_validation.exe。当前版本1.7.0+18，历史18个版本34份不同包，最早留存1.0.0+1，没有0.01安装包。历史包内版本和哈希已核对。
+Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 luma_validation.exe。当前版本1.7.1+19，历史19个版本36份不同包，最早留存1.0.0+1，没有0.01安装包。历史包内版本和哈希已核对。
 
 1.7.0 已实现统一设置动效、可编辑作者与简介、单本导入自动识别与分类、重复导入保留信息，以及书源管理和 GitHub Releases 更新入口。自动功能测试99项通过、2项可选采集跳过，静态分析无问题；共享组件渲染采集另行通过。Android 已覆盖安装1.7.0并核对签名，完整触控实测仍待完成；Windows 新交付目录21个文件与构建和ZIP哈希一致，原生检查因用户Esc中断。不要把这些结果描述为全面实机验收或帧率证明。
 
@@ -38,11 +38,11 @@ Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 lum
 
 ## 云端更新与发布
 
-已发布仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。18个版本、34份不同安装包已上传；远端附件大小与SHA256已核对。最新清单可通过 Releases/latest/download/luma-update.json 下载。具体附件和链接见 history-manifest.json。
+已发布仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。19个版本、36份不同安装包已上传；远端附件大小与SHA256已核对。最新清单可通过 Releases/latest/download/luma-update.json 下载。具体附件和链接见 history-manifest.json。
 
 GitHub CLI授权和历史发布已完成。后续发布可用tools/publish_history.py核对并续传。凭据不写入交接文档。
 
-发布18个版本的独立Release，历史版本不设为Latest，1.7.0为最新正式版本。最新Release必须含原名称 Luma-1.7.0-Android-arm64.apk、Luma-1.7.0-Windows-x64.zip 和 luma-update.json。清单包含version、build、平台附件URL、大小和SHA256。修改附件名时同步修改清单。
+发布19个版本的独立Release，历史版本不设为Latest，1.7.1为最新正式版本。最新Release必须含原名称 Luma-1.7.1-Android-arm64.apk、Luma-1.7.1-Windows-x64.zip 和 luma-update.json。清单包含version、build、平台附件URL、大小和SHA256。修改附件名时同步修改清单。
 
 应用当前需在设置 → 关于Luma → 检查更新 → 更新来源配置仓库地址。无配置或网络失败时不应显示已是最新版。Android检查包名、版本和签名，由用户完成系统安装确认；Windows退出应用、保留旧目录备份并安装到新目录。云端发布后还需实测检查、下载与安装链路。
 
@@ -65,3 +65,7 @@ GitHub CLI授权和历史发布已完成。后续发布可用tools/publish_histo
 ## 给新窗口的首条消息
 
 请继续Luma项目。先读取HANDOFF.md、HISTORY.md和history-manifest.json，确认最新发布和本地未提交状态。保持本地无广告、两端视觉统一但键鼠/触控不同，保留个人书库。先完成交接中未完成的更新安装实机核对，不重复设计已确认的布局。
+
+## 最新增量发布：1.7.1+19
+
+两端release构建、签名/包版本检查、Windows21文件ZIP校验通过；新增5份公开附件，最新清单已验证。每完成正式版本都须同步GitHub两端安装包、更新记录、SHA256与luma-update.json。旧版本需配置更新来源为本仓库，安装确认仍由用户完成。完整实机及云端更新安装仍待验收。此次未更改设备数据或当前活动Windows目录，也未提交/重置原工作树。
