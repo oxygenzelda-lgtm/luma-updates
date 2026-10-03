@@ -4,6 +4,20 @@
 
 完整的此前产品要求及后续验收顺序见[CONTINUATION.md](CONTINUATION.md)，不要只衔接最近一次上传。
 
+
+## 2026-10-03 规则与更新设置（1.7.3+21，最新确认）
+
+- 规则管理移到主设置，分为小说书源与漫画书源，支持文件、链接导入及启停。删除书源参考整段和“尚未导入书源。本地阅读不受影响”文案。
+- 发现保留小说/漫画、搜索与筛选，删除书源分类标题、管理书源及刷新按钮；显示启用的规则，不显示本地书架。
+- 内置7份目录规则，来自3个项目：Project Gutenberg中/英/法小说目录3份（随包94个作品条目），Pepper & Carrot中/英/法漫画3份、xkcd英文漫画1份。规则由Luma编写；未复制第三方GPL规则。保留来源许可与作者署名。
+- 7份规则均完成实际搜索与代表作品下载校验；EPUB解析及漫画图片离线导入通过。不是全部作品或所有网络环境验收。Standard Ebooks样本未通过，未内置；番茄仍需服务、飞卢仍未验证。
+- 按最新要求，主设置“检查更新”进入完整设置页面：立即检查、启动检查开关、最近检查记录、清理更新下载缓存、发行版及更新来源外链。启动检查开关已从关于页移走；关于页主按钮仍可直接检查。
+- 新版提示中的稍后提醒、关闭自动更新、详情和立即更新及主题进度动画保留；离线启动静默。缓存清理仅删除更新器生成的APK/ZIP，不清理书库、小说或进度。
+- 验证：29项相关测试、静态分析、8张手机/桌面组件截图、两端release构建通过。原Android签名保留。完整实机流程、实际系统升级安装、退出重开及进度保留仍待验收。
+- 1.7.3两端包及5份附件已发布，当前21个发布版本、40份安装包、86份附件（早期1.0.0保留预发行标记）。生产检查逻辑通过公开最新清单识别1.7.2+20→1.7.3+21；本轮不重复下载历史包或执行系统安装。
+- 证据：evidence/release173-delivery.json、release173-built-in-sources.json、release173-cloud-update-check.json、rules-update-revision-2026-10-03.md。旧记录保留，下面1.7.1/1.7.2的旧入口要求以本节为准。
+
+
 ## 产品约定
 
 - Luma 是个人本地小说、轻小说和漫画阅读器，无广告。本地阅读不要求账号。
@@ -18,7 +32,7 @@
 
 ## 当前实现
 
-Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 luma_validation.exe。当前版本1.7.2+20，历史20个版本38份不同包，最早留存1.0.0+1，没有0.01安装包。历史包内版本和哈希已核对。
+Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 luma_validation.exe。当前版本1.7.3+21，历史21个版本40份不同包，最早留存1.0.0+1，没有0.01安装包。历史包内版本和哈希已核对。
 
 1.7.0 已实现统一设置动效、可编辑作者与简介、单本导入自动识别与分类、重复导入保留信息，以及书源管理和 GitHub Releases 更新入口。自动功能测试99项通过、2项可选采集跳过，静态分析无问题；共享组件渲染采集另行通过。Android 已覆盖安装1.7.0并核对签名，完整触控实测仍待完成；Windows 新交付目录21个文件与构建和ZIP哈希一致，原生检查因用户Esc中断。不要把这些结果描述为全面实机验收或帧率证明。
 
@@ -38,13 +52,13 @@ Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 lum
 
 ## 云端更新与发布
 
-已发布仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。20个版本、38份不同安装包已上传；远端附件大小与SHA256已核对。最新清单可通过 Releases/latest/download/luma-update.json 下载。具体附件和链接见 history-manifest.json。
+已发布仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。21个版本、40份不同安装包已上传；远端附件大小与SHA256已核对。最新清单可通过 Releases/latest/download/luma-update.json 下载。具体附件和链接见 history-manifest.json。
 
 GitHub CLI授权和历史发布已完成。后续发布可用tools/publish_history.py核对并续传。凭据不写入交接文档。
 
-发布20个版本的独立Release，历史版本不设为Latest，1.7.2为最新正式版本。最新Release必须含原名称 Luma-1.7.2-Android-arm64.apk、Luma-1.7.2-Windows-x64.zip 和 luma-update.json。清单包含version、build、平台附件URL、大小和SHA256。修改附件名时同步修改清单。
+发布21个版本的独立Release，历史版本不设为Latest，1.7.3为最新正式版本。最新Release必须含原名称 Luma-1.7.3-Android-arm64.apk、Luma-1.7.3-Windows-x64.zip 和 luma-update.json。清单包含version、build、平台附件URL、大小和SHA256。修改附件名时同步修改清单。
 
-1.7.2内置正式更新仓库：启动自动检查或设置内直接检查，关于页可控制启动检查；网络失败不能显示已是最新版。1.7.1及更早版本仍可能需要先配置仓库或手动下载安装1.7.2。Android检查包名、版本和签名，由用户完成系统安装确认；Windows退出应用、保留旧目录备份并安装到新目录。云端发布后还需实测检查、下载与安装链路。
+1.7.3内置正式更新仓库：启动自动检查，主设置检查更新页控制启动检查并手动检查，关于页主按钮直接检查；网络失败不能显示已是最新版。1.7.1及更早版本仍可能需要先配置仓库或手动下载安装1.7.2。Android检查包名、版本和签名，由用户完成系统安装确认；Windows退出应用、保留旧目录备份并安装到新目录。云端发布后还需实测检查、下载与安装链路。
 
 当前签名沿用个人本机Android Debug证书以保持覆盖升级；若换签名，旧安装不能直接覆盖。证书指纹 eeacd732ef8a691d828285dbab938a18c14b0a8e4a4c2804f904af76465cd9a0。签名私钥、凭据、个人小说和阅读历史不进入此分发仓库。
 
