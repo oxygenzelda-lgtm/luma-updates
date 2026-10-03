@@ -25,6 +25,7 @@
 | 1.4.0 | 2026-10-02 | 离线中文字体与小说排版 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.4.0) |
 | 1.5.0 | 2026-10-02 | 设置统一与自动智能整理 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.5.0) |
 | 1.6.0 | 2026-10-02 | 精简正式目录与分类设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0) |
+| 1.7.6 | 2026-10-04 | 搜索入口展开与并发手动更新修补 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.6) |
 | 1.7.5 | 2026-10-04 | 独立搜索、更新检查修复、完整字体无损压缩 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.5) |
 | 1.7.4 | 2026-10-04 | 统一发现搜索、规则顶部栏与刷新 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.4) |
 | 1.7.3 | 2026-10-03 | 分类规则管理、内置公开目录与更新设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.3) |
@@ -36,6 +37,17 @@
 
 本仓库是安装包与项目文档分发仓库；发布格式参照常见开源项目，尚不代表 Luma 源码已公开或选定开源许可证。
 
+
+## 2026-10-04 最终搜索与更新修补（1.7.6+24，当前版本）
+
+- 完整继承下方1.7.5的独立搜索、输入隐藏导航、完整离线字体无损压缩、备用清单及所有早期产品需求。1.7.5及历史安装包不替换、不重复上传。
+- 书架搜索页从实际搜索框展开并原路返回；搜索/阅读入口在Windows自定义标题栏下使用导航区域坐标，保持来源位置对齐。
+- 补测复现并修复关闭自动检查时，同时手动检查被漏掉的竞争场景。手动检查等待共用请求完成后才刷新最近检查记录和恢复按钮；清除过期排队提示，防止最终结果被旧提示延迟。
+- 最终37项定向回归、静态检查、13张两端组件截图及两个release构建通过。APK包名/版本/原签名与Windows20文件ZIP哈希已核对；不代表原生安装验收。
+- Android包31,288,125字节（31.29 MB / 29.84 MiB），比1.7.4缩小38.6%。严格30,000,000字节目标仍未达到，已满足30 MiB；未删字体、字形或阅读功能。Windows ZIP 35,251,896字节。AOT符号仅本地delivery/symbols/1.7.6，完整原字体与恢复SHA256保持一致。
+- 当前云端24个Release、46份安装包、101份Release附件，1.0.0仍为历史预发行。最新1.7.6两端包、说明、SHA256及清单已发布；主清单及仓库main/latest/luma-update.json应保持一致。真实检查/下载结果见release176-cloud-update-check.json；1.7.5的两端实际云端下载已通过且证据保留。
+- 尚无连接的Android设备。两端触控/键鼠全流程、真实升级安装、退出重开及书库保留仍待实机验收；不得卸载或清数据验证升级。用户手机当前安装版本未收到回复，不能断定其更新故障的唯一原因。
+- 证据：evidence/release176-delivery.json、release176-cloud-update-check.json、release176-size.json、release176-tests.log、release176-analyze.log、release176-visual.log及release176-*.png。旧版若仍检查失败，可先覆盖安装最新APK，再验证新的检查链路。
 
 ## 2026-10-04 独立搜索、更新修复与无损压缩（1.7.5+23，当前版本）
 
