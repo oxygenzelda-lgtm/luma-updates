@@ -1,6 +1,6 @@
 # Luma 更新记录与历史安装包
 
-记录日期：2026-10-03。版本号来自 APK manifest 与 Windows EXE 产品版本；文件字节保持原样。当前上传状态见下表，不能将准备好的文件理解为已发布。
+记录日期：2026-10-04。版本号来自 APK manifest 与 Windows EXE 产品版本；文件字节保持原样。当前上传状态见下表，不能将准备好的文件理解为已发布。
 
 最早留存包为 1.0.0+1。未找到 0.01 安装包；早期项目配置也采用 1.0.0+1，不制造缺失版本。
 
@@ -25,6 +25,7 @@
 | 1.4.0 | 2026-10-02 | 离线中文字体与小说排版 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.4.0) |
 | 1.5.0 | 2026-10-02 | 设置统一与自动智能整理 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.5.0) |
 | 1.6.0 | 2026-10-02 | 精简正式目录与分类设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0) |
+| 1.7.4 | 2026-10-04 | 统一发现搜索、规则顶部栏与刷新 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.4) |
 | 1.7.3 | 2026-10-03 | 分类规则管理、内置公开目录与更新设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.3) |
 | 1.7.2 | 2026-10-03 | 直接更新提示与启动自动检查 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.2) |
 | 1.7.1 | 2026-10-03 | 关于与设置页面、发现书源和书籍删除 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.1) |
@@ -34,6 +35,17 @@
 
 本仓库是安装包与项目文档分发仓库；发布格式参照常见开源项目，尚不代表 Luma 源码已公开或选定开源许可证。
 
+
+## 2026-10-04 统一发现搜索与刷新（1.7.4+22，最新确认）
+
+- 发现不再展示规则卡片或进入单源搜索页。统一“搜索书源”输入作品名/作者，搜索当前小说或漫画分类下全部已启用、兼容的内置及导入规则；直接显示合并的作品结果及加入书架操作。规则配置只在设置中展示。
+- 规则管理顶部沿用书架玻璃分类栏结构：小说书源/漫画书源同排，最右侧导入按钮，选择文件或链接；移除大块导入规则区域及旧分类按钮。
+- 发现与书架新增刷新按钮；顶部下拉或到底部继续上滑可刷新，主题进度反馈支持减少动画。书架重载本地索引与进度；发现重载规则，有关键词时重新搜索，不修改原小说或清空个人数据。
+- 搜索按批次最多3个并发请求，跨源结果按URL去重、保留下载来源；部分失败保留其他结果，清空/换分类/新查询使旧结果失效。既有导入规则格式和兼容性范围不变。
+- 21项相关测试通过；静态检查无问题；真实应用组件树下10张手机/桌面截图检查及两端release构建通过。聚合搜索实测覆盖3份小说规则及4份漫画规则；沿用1.7.3下载验证范围，不重复下载整套内容。组件渲染不代表原生全流程或安装验收。
+- 1.7.4两端安装包、更新记录、SHA256和最新清单已发布；生产检查逻辑识别1.7.3+21→1.7.4+22。本轮只校验公开清单及新增附件远端SHA256，不重复下载历史包。22个发布版本、42份安装包、91份附件；早期1.0.0保留预发行标记。
+- 完整Android触控/Windows键鼠、真实云端升级安装、退出重开及设备书库保留仍待验收。此前未提交修改、个人书库及Android签名保留；未重置或清数据。
+- 证据：evidence/release174-delivery.json、release174-cloud-update-check.json、release174-tests.log、release174-catalog-final.log、release174-analyze.log及release174-*.png。最新要求覆盖1.7.3关于显示规则列表/删除刷新入口的旧要求，其他既有需求继承。
 
 ## 2026-10-03 规则与更新设置（1.7.3+21，最新确认）
 
