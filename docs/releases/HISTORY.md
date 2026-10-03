@@ -21,11 +21,11 @@
 | 1.2.1 | 2026-10-02 | 手机继续阅读与阅读工具栏衔接 | Android | 1 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.1) |
 | 1.2.2 | 2026-10-02 | 标题闪线修复与桌面阅读动效 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.2) |
 | 1.2.3 | 2026-10-02 | Windows 独立软件窗口框架 | Windows | 1 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.3) |
-| 1.3.0 | 2026-10-02 | 阅读状态、黑色模式与字体设置 | Android、Windows | 2 | 未上传 / 待核对 |
-| 1.4.0 | 2026-10-02 | 离线中文字体与小说排版 | Android、Windows | 2 | 未上传 / 待核对 |
-| 1.5.0 | 2026-10-02 | 设置统一与自动智能整理 | Android、Windows | 2 | 未上传 / 待核对 |
-| 1.6.0 | 2026-10-02 | 精简正式目录与分类设置 | Android、Windows | 2 | 未上传 / 待核对 |
-| 1.7.0 | 2026-10-03 | 统一设置动效、简介与更新入口 | Android、Windows | 2 | 未上传 / 待核对 |
+| 1.3.0 | 2026-10-02 | 阅读状态、黑色模式与字体设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.3.0) |
+| 1.4.0 | 2026-10-02 | 离线中文字体与小说排版 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.4.0) |
+| 1.5.0 | 2026-10-02 | 设置统一与自动智能整理 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.5.0) |
+| 1.6.0 | 2026-10-02 | 精简正式目录与分类设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0) |
+| 1.7.0 | 2026-10-03 | 统一设置动效、简介与更新入口 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.0) |
 
 旧版本用于回溯和比较。Android 通常不能直接覆盖降级；不要卸载来试旧版而丢失书库。Windows 旧版应解压到独立目录。历史包的早期自制验证样本与当时已知问题保留。
 
