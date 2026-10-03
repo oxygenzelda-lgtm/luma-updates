@@ -36,9 +36,9 @@ Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 lum
 
 ## 云端更新与发布
 
-目标仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。当前实际发布状态以 history-manifest.json 和仓库网页为准；写了目标地址不表示仓库已创建或附件已上线。
+已发布仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。18个版本、34份不同安装包已上传；远端附件大小与SHA256已核对。最新清单可通过 Releases/latest/download/luma-update.json 下载。具体附件和链接见 history-manifest.json。
 
-GitHub CLI已授权，更新仓库已创建，历史附件正在逐版本上传。tools/publish_history.py可核对并补传缺失附件；已发布状态以当前history-manifest.json为准。凭据不写入交接文档。
+GitHub CLI授权和历史发布已完成。后续发布可用tools/publish_history.py核对并续传。凭据不写入交接文档。
 
 发布18个版本的独立Release，历史版本不设为Latest，1.7.0为最新正式版本。最新Release必须含原名称 Luma-1.7.0-Android-arm64.apk、Luma-1.7.0-Windows-x64.zip 和 luma-update.json。清单包含version、build、平台附件URL、大小和SHA256。修改附件名时同步修改清单。
 
@@ -62,4 +62,4 @@ GitHub CLI已授权，更新仓库已创建，历史附件正在逐版本上传�
 
 ## 给新窗口的首条消息
 
-请继续Luma项目。先读取HANDOFF.md、HISTORY.md和history-manifest.json，确认最新发布和本地未提交状态。保持本地无广告、两端视觉统一但键鼠/触控不同，保留个人书库。先完成交接中未完成的云端发布验证与实机核对，不重复设计已确认的布局。
+请继续Luma项目。先读取HANDOFF.md、HISTORY.md和history-manifest.json，确认最新发布和本地未提交状态。保持本地无广告、两端视觉统一但键鼠/触控不同，保留个人书库。先完成交接中未完成的更新安装实机核对，不重复设计已确认的布局。
