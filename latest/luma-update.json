@@ -1,31 +1,28 @@
 {
   "schemaVersion": 1,
-  "version": "1.7.5",
-  "build": 23,
-  "publishedAt": "2026-10-03T22:52:53.282490+00:00",
+  "version": "1.7.6",
+  "build": 24,
+  "publishedAt": "2026-10-03T23:19:01.494482+00:00",
   "changes": [
-    "发现与书架搜索改为独立页面，输入及结果浏览期间不显示主导航，返回主页后恢复",
-    "书架搜索支持书名、作者、题材及多个关键词；原有分类、导入、继续阅读和书源下载保留",
-    "完整离线字体无损压缩，后台校验解压并缓存，字体样式、中文与日文字符覆盖和许可保持不变",
-    "Android使用运行库压缩及AOT符号分离减少安装包体积，保留原包名与签名"
+    "继承1.7.5的独立搜索页、键盘隐藏导航及完整离线字体无损压缩",
+    "书架搜索页从搜索框位置展开并原路返回，电脑端动画使用应用区域坐标"
   ],
   "fixes": [
-    "自动检查期间手动检查不再无声忽略，能看到进度和最终结果",
-    "返回应用时重试更新检查，更新清单提供备用渠道并请求新鲜数据",
-    "损坏的更新偏好恢复默认仓库，保留异常备份，不改动书库与阅读进度",
-    "手机输入法弹出时隐藏主导航，避免导航被键盘顶到页面中间"
+    "关闭自动检查时，同时触发的手动检查仍执行并返回最终结果",
+    "手动检查等待共用请求结束后再刷新设置中的最近检查记录，避免过早恢复按钮及旧记录",
+    "更新反馈清除过期排队提示，避免重复正在检查延迟最终结果展示"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.5/Luma-1.7.5-Android-arm64.apk",
-      "bytes": 31287525,
-      "sha256": "968f0a3b2e1a22106ff8fc7e30226b4b17824b61f0802ee03fde4e9d77e7a0a7"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.6/Luma-1.7.6-Android-arm64.apk",
+      "bytes": 31288125,
+      "sha256": "31d71ed85bc00ae541e218c2d995af3b32df4132e1611244c96337252a2c7af2"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.5/Luma-1.7.5-Windows-x64.zip",
-      "bytes": 35251278,
-      "sha256": "17b5f9418cba3e4af8c5cca0b2424998cbe3617e680c8ccaf7eb8905f7fc7447"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.6/Luma-1.7.6-Windows-x64.zip",
+      "bytes": 35251896,
+      "sha256": "6d2b2874f648f50b5d069b029f8399a7c1caf8c4d4c3af9005651876c7f76398"
     }
   }
 }
