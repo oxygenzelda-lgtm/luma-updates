@@ -25,12 +25,34 @@
 | 1.4.0 | 2026-10-02 | 离线中文字体与小说排版 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.4.0) |
 | 1.5.0 | 2026-10-02 | 设置统一与自动智能整理 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.5.0) |
 | 1.6.0 | 2026-10-02 | 精简正式目录与分类设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0) |
+| 1.7.1 | 2026-10-03 | 关于与设置页面、发现书源和书籍删除 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.1) |
 | 1.7.0 | 2026-10-03 | 统一设置动效、简介与更新入口 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.0) |
 
 旧版本用于回溯和比较。Android 通常不能直接覆盖降级；不要卸载来试旧版而丢失书库。Windows 旧版应解压到独立目录。历史包的早期自制验证样本与当时已知问题保留。
 
 本仓库是安装包与项目文档分发仓库；发布格式参照常见开源项目，尚不代表 Luma 源码已公开或选定开源许可证。
 
+
+## 1.7.1 · 关于与设置页面、发现书源和书籍删除
+
+**新增与调整**
+
+- 关于页检查更新与更新记录同排，突出检查更新
+- 更新记录、项目主页、问题反馈直接打开GitHub，使用外链图标
+- 字体字号与排版、帮助、诊断和致谢采用完整页面
+- 发现显示已导入书源，支持刷新、查找及进入公开作品搜索
+- 书籍详情缩紧比例，右上角增加删除入口
+
+**修复**
+
+- 发现不再展示已下载的本地书架内容
+- 从书架删除保留原文件、图片和阅读进度，取消不删除
+
+**限制**
+
+- 完整源码尚未公开，源代码入口标明尚未公开
+- 番茄项目需另部署服务；飞卢规则可用性未验证
+- 完整两端实机验收与真实云端更新安装尚未完成
 
 ## 1.7.0 · 统一设置动效、简介与更新入口
 
