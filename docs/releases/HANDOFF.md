@@ -6,6 +6,19 @@
 
 
 
+## 2026-10-04 独立搜索、更新修复与无损压缩（1.7.5+23，当前版本）
+
+- 发现与书架的搜索框是跳转入口，点击后进入独立搜索页，输入、提交和结果浏览都不显示主导航，返回主页后恢复。手机其他输入场景也在键盘弹出时隐藏主导航，避免被键盘顶到页面中间。Windows同样使用独立搜索页，保留键鼠操作。
+- 书架搜索匹配书名、作者、题材及多个关键词；书源搜索仍聚合当前分类下已启用兼容规则，保留加入书架及离线下载。主页的分类、筛选、刷新、导入和紧凑继续阅读保留。
+- 修复已复现的自动检查未结束时手动检查被忽略的问题：手动请求看到正在检查及最终结果，共用原请求，不重复弹窗。恢复应用时重新检查；损坏更新偏好恢复正式来源并保留异常备份，不触碰阅读数据。
+- 更新清单主渠道仍为正式Release的latest/download/luma-update.json，网络/超时失败时尝试仓库main/latest/luma-update.json，保持格式和附件SHA256校验。所有网络请求要求新鲜数据。备用清单不能保证所有网络都能访问GitHub安装包。
+- 完整原字体打包为XZ，工作线程解压并逐文件SHA256验证，与原字体字节完全一致，保留三套离线字体、中文/日文字符覆盖及许可。首次打开准备字体，之后复用缓存；安装占用包括恢复的字体及个人书库，不等于下载包大小。
+- Android原包50,969,663字节，新包31,287,525字节（31.29 MB / 29.84 MiB），缩小38.6%；满足30 MiB，尚未达到严格30,000,000字节目标。未删除字体、字形或阅读功能。Windows ZIP为35,251,278字节，比1.7.4的44,194,200字节减少20.2%。AOT调试符号只保留在本地delivery/symbols/1.7.5，勿公开。
+- 36项定向回归通过，包括搜索路由/键盘/返回、更新并发与备用清单、异常偏好、完整字体恢复/实际FontLoader注册/缓存损坏恢复及两端阅读设置。静态检查无问题；两端release构建、Android原签名、Windows20文件ZIP哈希通过；组件截图检查完成，未代替原生安装验收。
+- 1.7.5的两端安装包、说明、SHA256及清单已发布。当前云端23个Release、44份安装包、96份Release附件；历史索引原条目逐项保留，1.0.0仍是历史预发行。云端实际检查/下载结果另见release175-cloud-update-check.json，不据此声称系统安装已经验收。
+- 尚无已连接Android设备；两端真实云端安装、退出重开、触控/键鼠全流程及实机书库保留仍待验收。若旧客户端网络仍无法检查，应先覆盖安装新APK，不卸载或清数据。
+- 证据：evidence/release175-delivery.json、release175-cloud-update-check.json、release175-size.json、release175-tests.log、release175-analyze.log、release175-visual.log及release175-*.png。最新独立搜索要求覆盖1.7.4主页内联输入；其他完整需求继续继承。
+
 ## 2026-10-04 统一发现搜索与刷新（1.7.4+22，最新确认）
 
 - 发现不再展示规则卡片或进入单源搜索页。统一“搜索书源”输入作品名/作者，搜索当前小说或漫画分类下全部已启用、兼容的内置及导入规则；直接显示合并的作品结果及加入书架操作。规则配置只在设置中展示。
@@ -45,7 +58,7 @@
 
 ## 当前实现
 
-Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 luma_validation.exe。当前版本1.7.4+22，历史22个版本42份不同包，最早留存1.0.0+1，没有0.01安装包。历史包内版本和哈希已核对。
+Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 luma_validation.exe。当前版本1.7.5+23，历史23个版本44份不同包，最早留存1.0.0+1，没有0.01安装包。历史包内版本和哈希已核对。
 
 1.7.0 已实现统一设置动效、可编辑作者与简介、单本导入自动识别与分类、重复导入保留信息，以及书源管理和 GitHub Releases 更新入口。自动功能测试99项通过、2项可选采集跳过，静态分析无问题；共享组件渲染采集另行通过。Android 已覆盖安装1.7.0并核对签名，完整触控实测仍待完成；Windows 新交付目录21个文件与构建和ZIP哈希一致，原生检查因用户Esc中断。不要把这些结果描述为全面实机验收或帧率证明。
 
@@ -65,11 +78,11 @@ Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 lum
 
 ## 云端更新与发布
 
-已发布仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。22个版本、42份不同安装包已上传；远端附件大小与SHA256已核对。最新清单可通过 Releases/latest/download/luma-update.json 下载。具体附件和链接见 history-manifest.json。
+已发布仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。23个版本、44份不同安装包已上传；远端附件大小与SHA256已核对。最新清单可通过 Releases/latest/download/luma-update.json 下载。具体附件和链接见 history-manifest.json。
 
-GitHub CLI授权和历史发布已完成。后续发布可用tools/publish_history.py核对并续传。凭据不写入交接文档。
+GitHub CLI授权和历史发布已完成。后续新版本用tools/publish_current_release.py增量准备、发布和同步文档；不要重跑初始历史盘点或准备脚本。凭据不写入交接文档。
 
-发布22个版本的独立Release，历史版本不设为Latest，1.7.4为最新正式版本。最新Release必须含原名称 Luma-1.7.4-Android-arm64.apk、Luma-1.7.4-Windows-x64.zip 和 luma-update.json。清单包含version、build、平台附件URL、大小和SHA256。修改附件名时同步修改清单。
+发布23个版本的独立Release，历史版本不设为Latest，1.7.5为最新正式版本。最新Release必须含原名称 Luma-1.7.5-Android-arm64.apk、Luma-1.7.5-Windows-x64.zip 和 luma-update.json。清单包含version、build、平台附件URL、大小和SHA256。修改附件名时同步修改清单。
 
 1.7.3内置正式更新仓库：启动自动检查，主设置检查更新页控制启动检查并手动检查，关于页主按钮直接检查；网络失败不能显示已是最新版。1.7.1及更早版本仍可能需要先配置仓库或手动下载安装1.7.2。Android检查包名、版本和签名，由用户完成系统安装确认；Windows退出应用、保留旧目录备份并安装到新目录。云端发布后还需实测检查、下载与安装链路。
 
