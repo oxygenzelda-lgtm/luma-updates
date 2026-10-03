@@ -426,5 +426,31 @@
       "evidence/release173-built-in-sources.json",
       "evidence/release173-delivery.json"
     ]
+  },
+  "1.7.4": {
+    "date": "2026-10-04",
+    "title": "统一发现搜索与刷新",
+    "changes": [
+      "发现页统一搜索当前分类下所有已启用兼容规则中的作品，不再显示独立规则搜索卡片",
+      "输入书名或作者后合并小说/漫画搜索结果，保留来源和加入书架操作；规则配置集中在设置",
+      "规则管理改为玻璃小说书源/漫画书源分类栏，右侧导入按钮选择规则文件或规则链接",
+      "发现与书架增加刷新按钮、上滑到底刷新及列表顶部下拉刷新，带主题进度反馈和减少动画适配"
+    ],
+    "fixes": [
+      "跨书源搜索限制并发、去重，部分规则失败不丢弃其他结果，过期请求不覆盖新查询",
+      "书架刷新重新读取书籍与阅读记录，保留原文件、偏好和阅读进度"
+    ],
+    "limits": [
+      "公开目录范围沿用1.7.3；不代表番茄或飞卢已内置可用，规则脚本/登录等仍不支持",
+      "上滑刷新在列表底部继续滑动时触发，普通滚动不会反复刷新",
+      "两端完整实机流程和真实更新安装仍待验收；本轮未卸载或清数据"
+    ],
+    "evidence": [
+      "evidence/release174-delivery.json",
+      "evidence/release174-cloud-update-check.json",
+      "evidence/release174-tests.log",
+      "evidence/release174-catalog-final.log",
+      "evidence/release174-visual.log"
+    ]
   }
 }
