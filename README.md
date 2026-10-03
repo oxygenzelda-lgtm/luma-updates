@@ -5,6 +5,7 @@
 - [下载安装包](https://github.com/oxygenzelda-lgtm/luma-updates/releases/latest)
 - [完整版本记录](docs/releases/HISTORY.md)
 - [新聊天接续文档](docs/releases/HANDOFF.md)
+- [完整需求与接续总览](docs/releases/CONTINUATION.md)
 - [安装包表格](docs/releases/版本文件索引.csv)
 - [机器可读校验索引](docs/releases/history-manifest.json)
 
