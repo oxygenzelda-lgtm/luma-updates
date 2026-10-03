@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-10-03",
-  "cloudStatus": "partially_uploaded",
+  "cloudStatus": "uploaded_verified",
   "missingRequestedVersions": [
     "0.01: no retained package found in delivery"
   ],
@@ -27,7 +27,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.0",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606072131,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-031663a30e54a990b2fb/Luma-1.0.0-build1-Android-multi-debug.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.0.0/Luma-1.0.0-build1-Android-multi-debug.apk",
       "remoteDigest": "sha256:d409a69a00a632db2b5577a25f3e2be06347b164efeb3cd62b7b8bd763817069"
     },
     {
@@ -49,7 +49,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.0",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606075341,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-031663a30e54a990b2fb/Luma-1.0.0-build1-Windows-x64-r2.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.0.0/Luma-1.0.0-build1-Windows-x64-r2.zip",
       "remoteDigest": "sha256:7e33a26e8550afffbb9671ae98f2a7dffaa4ac101bc870f4831d06042852c6c7"
     },
     {
@@ -71,7 +71,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.0",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606075731,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-031663a30e54a990b2fb/Luma-1.0.0-build1-Windows-x64-r3.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.0.0/Luma-1.0.0-build1-Windows-x64-r3.zip",
       "remoteDigest": "sha256:e1927e2bb32b38d53b20ee4dfa678845120f0ed11231b1db9dce4d7bb9dfce68"
     },
     {
@@ -93,7 +93,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.0",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606076310,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-031663a30e54a990b2fb/Luma-1.0.0-build1-Windows-x64-r4.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.0.0/Luma-1.0.0-build1-Windows-x64-r4.zip",
       "remoteDigest": "sha256:ce0c4199a380c64f4404cdae7dee37ad68cd35a42cd4c3d5a8b6c1023d3e2b6e"
     },
     {
@@ -115,7 +115,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.0",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606076896,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-031663a30e54a990b2fb/Luma-1.0.0-build1-Windows-x64-r5.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.0.0/Luma-1.0.0-build1-Windows-x64-r5.zip",
       "remoteDigest": "sha256:c218469cd5d7515053630b9ed28e1d3ad52effa6735e9219fed8a7a622d29b1b"
     },
     {
@@ -137,7 +137,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.0",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606077437,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-031663a30e54a990b2fb/Luma-1.0.0-build1-Windows-x64.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.0.0/Luma-1.0.0-build1-Windows-x64.zip",
       "remoteDigest": "sha256:9fe4c87301240667ae017b3d5c5ad53b4db6acf027ad2365e0b9b1ef7dc81d4b"
     },
     {
@@ -161,7 +161,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.1",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606078685,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-52a99e9f1925cf731060/Luma-1.0.1-build2-Android-multi.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.0.1/Luma-1.0.1-build2-Android-multi.apk",
       "remoteDigest": "sha256:a7e56273eec499b848ec46a70128bcc2f415e5f808fa77a44be33da75e376272"
     },
     {
@@ -183,7 +183,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.1",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606079409,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-52a99e9f1925cf731060/Luma-1.0.1-build2-Windows-x64.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.0.1/Luma-1.0.1-build2-Windows-x64.zip",
       "remoteDigest": "sha256:b7575dc29f2678ef53831905bcd9bfd0217d82470ea14fbc2ef1cfe16388a50b"
     },
     {
@@ -207,7 +207,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.0.2",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606080834,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-f036d45545f6e2605f7b/Luma-1.0.2-build3-Android-multi.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.0.2/Luma-1.0.2-build3-Android-multi.apk",
       "remoteDigest": "sha256:96fcfef301f532cd69c8121aa8f9f8e87ca8c4a9841aa035de16e31cff90ae88"
     },
     {
@@ -231,7 +231,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.0",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606082401,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-218d1a7d4f92df758a86/Luma-1.1.0-build4-Android-multi.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.1.0/Luma-1.1.0-build4-Android-multi.apk",
       "remoteDigest": "sha256:fac8ac96ea6837237a5b339dc1d481c3929fa3643a2a6f4200545228865d5bd4"
     },
     {
@@ -253,7 +253,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.0",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606083012,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-218d1a7d4f92df758a86/Luma-1.1.0-build4-Windows-x64.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.1.0/Luma-1.1.0-build4-Windows-x64.zip",
       "remoteDigest": "sha256:98afa704456fe0c315e926671a86d41df4a5a1ead88b47781048637789994ca0"
     },
     {
@@ -277,7 +277,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.1",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606084123,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-e3bf0d9636fef416d2af/Luma-1.1.1-build5-Android-multi.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.1.1/Luma-1.1.1-build5-Android-multi.apk",
       "remoteDigest": "sha256:f790bdb171dafa39d6fcf0465ad18ccc5c77494fffa748a0c1726afc3478db6b"
     },
     {
@@ -299,7 +299,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.1",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606084706,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-e3bf0d9636fef416d2af/Luma-1.1.1-build5-Windows-x64.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.1.1/Luma-1.1.1-build5-Windows-x64.zip",
       "remoteDigest": "sha256:eb79a31ce053cc61f5d62d64e44144b5a2119ec9cafa110cfbf1dc036cee35dc"
     },
     {
@@ -323,7 +323,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.2",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606086014,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-4f44e59909d1e584eaac/Luma-1.1.2-build6-Android-multi.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.1.2/Luma-1.1.2-build6-Android-multi.apk",
       "remoteDigest": "sha256:4b160b1467ca0cb09eff6b3468fb6d188467c694720f5431edeb98dfcd725c86"
     },
     {
@@ -345,7 +345,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.2",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606086832,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-4f44e59909d1e584eaac/Luma-1.1.2-build6-Windows-x64.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.1.2/Luma-1.1.2-build6-Windows-x64.zip",
       "remoteDigest": "sha256:6a9a8fdad84beed91a57bb53333025ea6a321afe6517294787302433a70fc7ac"
     },
     {
@@ -369,7 +369,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.3",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606087985,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-488b5a935c0b48e62afc/Luma-1.1.3-build7-Android-multi.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.1.3/Luma-1.1.3-build7-Android-multi.apk",
       "remoteDigest": "sha256:d3ff7aafc23e537f075eaa7558b6fdc1587453fba9c5381799d2f4c0e8dc050a"
     },
     {
@@ -393,7 +393,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.4",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606089179,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-12f3540eee9072a4b875/Luma-1.1.4-build8-Android-multi.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.1.4/Luma-1.1.4-build8-Android-multi.apk",
       "remoteDigest": "sha256:63798f98781f2adbb28d449c48f43de8e89c5b64b00d67329dd41a516c2fb7cf"
     },
     {
@@ -415,7 +415,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.1.5",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606090373,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-fd166c24a272f11ff85b/Luma-1.1.5-build9-Windows-x64.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.1.5/Luma-1.1.5-build9-Windows-x64.zip",
       "remoteDigest": "sha256:85d9671bfed8cb3b27109c65d0016e66bc78d4503a1cd26971ad471cde69dd52"
     },
     {
@@ -439,7 +439,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.0",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606091209,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-9beae768bdce5e479989/Luma-1.2.0-build10-Android-multi.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.2.0/Luma-1.2.0-build10-Android-multi.apk",
       "remoteDigest": "sha256:d3393c01e743db83979da17d7e1deeb1a281717b6df58511acc88da724a0b179"
     },
     {
@@ -461,7 +461,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.0",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606091778,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-9beae768bdce5e479989/Luma-1.2.0-build10-Windows-x64.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.2.0/Luma-1.2.0-build10-Windows-x64.zip",
       "remoteDigest": "sha256:8dd65f47b41cb07112fe99615ed4646c326e067631e4d66e4139d6db697be32b"
     },
     {
@@ -485,7 +485,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.1",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606092710,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-768e30f4ec59e73cd521/Luma-1.2.1-build11-Android-multi.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.2.1/Luma-1.2.1-build11-Android-multi.apk",
       "remoteDigest": "sha256:106c732c5109886dbcfac07445ca05e1aa9cd888ff9f5ec593330dbf7b452c81"
     },
     {
@@ -509,7 +509,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.2",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606094177,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-6818e4b0e9d0b2833e6e/Luma-1.2.2-build12-Android-multi.apk",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.2.2/Luma-1.2.2-build12-Android-multi.apk",
       "remoteDigest": "sha256:d78d20f981f7dacc31dcfc8d016dc0ba3904b01782724b562dea5e23cdcbf893"
     },
     {
@@ -531,7 +531,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.2",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606094817,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-6818e4b0e9d0b2833e6e/Luma-1.2.2-build12-Windows-x64.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.2.2/Luma-1.2.2-build12-Windows-x64.zip",
       "remoteDigest": "sha256:f978aa5023673b9fbe98fa8a1b0b2c1c471f49ef96d9155d0befa4b6791a8290"
     },
     {
@@ -553,7 +553,7 @@
       "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.2.3",
       "verificationMethod": "github_asset_sha256",
       "githubAssetId": 606096087,
-      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/untagged-af47e732202070f51718/Luma-1.2.3-build13-Windows-x64.zip",
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.2.3/Luma-1.2.3-build13-Windows-x64.zip",
       "remoteDigest": "sha256:24fbf180a3b3239781a6fb7e6ea894f1af2ea0a47a4af139f82bcfcd4d3b2afb"
     },
     {
@@ -573,8 +573,12 @@
       "aliases": [],
       "assetName": "Luma-1.3.0-build14-Android-multi.apk",
       "packageId": "com.example.luma_validation",
-      "uploadStatus": "prepared_not_uploaded",
-      "releaseUrl": null
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.3.0",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 606097579,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.3.0/Luma-1.3.0-build14-Android-multi.apk",
+      "remoteDigest": "sha256:5a3551b1e6254c6ffa782afe397b5491b8ce6295df7b690eb2dd5227630f46d7"
     },
     {
       "version": "1.3.0",
@@ -591,8 +595,12 @@
       "aliases": [],
       "assetName": "Luma-1.3.0-build14-Windows-x64.zip",
       "packageId": "luma_validation.exe",
-      "uploadStatus": "prepared_not_uploaded",
-      "releaseUrl": null
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.3.0",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 606098511,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.3.0/Luma-1.3.0-build14-Windows-x64.zip",
+      "remoteDigest": "sha256:e32c4512768099a2ad028e7bb360b9ac55e32f62d1b94e9f37e6fd382b2cc2d9"
     },
     {
       "version": "1.4.0",
@@ -611,8 +619,12 @@
       "aliases": [],
       "assetName": "Luma-1.4.0-build15-Android-multi.apk",
       "packageId": "com.example.luma_validation",
-      "uploadStatus": "prepared_not_uploaded",
-      "releaseUrl": null
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.4.0",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 606099686,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.4.0/Luma-1.4.0-build15-Android-multi.apk",
+      "remoteDigest": "sha256:c269a3289412b5605491349a6bf68787c9f0b8e65f260ec9a7f69e936f98666c"
     },
     {
       "version": "1.4.0",
@@ -629,8 +641,12 @@
       "aliases": [],
       "assetName": "Luma-1.4.0-build15-Windows-x64.zip",
       "packageId": "luma_validation.exe",
-      "uploadStatus": "prepared_not_uploaded",
-      "releaseUrl": null
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.4.0",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 606100816,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.4.0/Luma-1.4.0-build15-Windows-x64.zip",
+      "remoteDigest": "sha256:f3d8045d7e76368c7a3cf9451f9bee68b0edc7fca46346223b3de34485fb464f"
     },
     {
       "version": "1.5.0",
@@ -649,8 +665,12 @@
       "aliases": [],
       "assetName": "Luma-1.5.0-build16-Android-multi.apk",
       "packageId": "com.example.luma_validation",
-      "uploadStatus": "prepared_not_uploaded",
-      "releaseUrl": null
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.5.0",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 606102466,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.5.0/Luma-1.5.0-build16-Android-multi.apk",
+      "remoteDigest": "sha256:43b8417eb53aa0e59b9f1a11c179020a2eaf088e9abbfb4184eb3922c0ca1695"
     },
     {
       "version": "1.5.0",
@@ -667,8 +687,12 @@
       "aliases": [],
       "assetName": "Luma-1.5.0-build16-Windows-x64.zip",
       "packageId": "luma_validation.exe",
-      "uploadStatus": "prepared_not_uploaded",
-      "releaseUrl": null
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.5.0",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 606103656,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.5.0/Luma-1.5.0-build16-Windows-x64.zip",
+      "remoteDigest": "sha256:a6852caab923c1c35dccb8904f4ddd577cf193f50d20d85378787de336ad22cb"
     },
     {
       "version": "1.6.0",
@@ -687,8 +711,12 @@
       "aliases": [],
       "assetName": "Luma-1.6.0-build17-Android-multi.apk",
       "packageId": "com.example.luma_validation",
-      "uploadStatus": "prepared_not_uploaded",
-      "releaseUrl": null
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 606104989,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.6.0/Luma-1.6.0-build17-Android-multi.apk",
+      "remoteDigest": "sha256:5f58d594fd8974cf3caf2466242b774a03f5b26dc567c89d4319d506ac4fd3d1"
     },
     {
       "version": "1.6.0",
@@ -705,8 +733,12 @@
       "aliases": [],
       "assetName": "Luma-1.6.0-build17-Windows-x64.zip",
       "packageId": "luma_validation.exe",
-      "uploadStatus": "prepared_not_uploaded",
-      "releaseUrl": null
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 606105868,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.6.0/Luma-1.6.0-build17-Windows-x64.zip",
+      "remoteDigest": "sha256:72ec3ee67040a51ac74ae768ae39142859a592f4fea4a2a3fc502d288e609046"
     },
     {
       "version": "1.7.0",
@@ -727,9 +759,13 @@
       ],
       "assetName": "Luma-1.7.0-build18-Android-multi.apk",
       "packageId": "com.example.luma_validation",
-      "uploadStatus": "prepared_not_uploaded",
-      "releaseUrl": null,
-      "releaseAssetName": "Luma-1.7.0-Android-arm64.apk"
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.0",
+      "releaseAssetName": "Luma-1.7.0-Android-arm64.apk",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 607378881,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.0/Luma-1.7.0-Android-arm64.apk",
+      "remoteDigest": "sha256:70433cd8d741d3ed30f0c737c696d0b51e9fb3052a6b3515443f5cddc820bd89"
     },
     {
       "version": "1.7.0",
@@ -748,10 +784,15 @@
       ],
       "assetName": "Luma-1.7.0-build18-Windows-x64.zip",
       "packageId": "luma_validation.exe",
-      "uploadStatus": "prepared_not_uploaded",
-      "releaseUrl": null,
-      "releaseAssetName": "Luma-1.7.0-Windows-x64.zip"
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.0",
+      "releaseAssetName": "Luma-1.7.0-Windows-x64.zip",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 607380102,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.0/Luma-1.7.0-Windows-x64.zip",
+      "remoteDigest": "sha256:52c08a3805e88b5dc2e5baec75c7ef42b913f7f93c54ab65eaaaf6cdd5fa45bf"
     }
   ],
-  "repositoryUrl": "https://github.com/oxygenzelda-lgtm/luma-updates"
+  "repositoryUrl": "https://github.com/oxygenzelda-lgtm/luma-updates",
+  "latestManifestVerifiedAt": "2026-10-03T07:38:08.365330+00:00"
 }
