@@ -2,7 +2,7 @@
 
 本地、无广告的Android / Windows小说与漫画阅读器。
 
-最新版本：1.7.5 (23)。
+最新版本：1.7.6 (24)。
 
 [下载安装包](https://github.com/oxygenzelda-lgtm/luma-updates/releases/latest) · [更新记录](docs/releases/HISTORY.md) · [问题反馈](https://github.com/oxygenzelda-lgtm/luma-updates/issues)
 
