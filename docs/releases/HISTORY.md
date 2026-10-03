@@ -25,6 +25,7 @@
 | 1.4.0 | 2026-10-02 | 离线中文字体与小说排版 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.4.0) |
 | 1.5.0 | 2026-10-02 | 设置统一与自动智能整理 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.5.0) |
 | 1.6.0 | 2026-10-02 | 精简正式目录与分类设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0) |
+| 1.7.2 | 2026-10-03 | 直接更新提示与启动自动检查 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.2) |
 | 1.7.1 | 2026-10-03 | 关于与设置页面、发现书源和书籍删除 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.1) |
 | 1.7.0 | 2026-10-03 | 统一设置动效、简介与更新入口 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.0) |
 
@@ -32,6 +33,21 @@
 
 本仓库是安装包与项目文档分发仓库；发布格式参照常见开源项目，尚不代表 Luma 源码已公开或选定开源许可证。
 
+
+## 1.7.2 · 直接更新提示与启动自动检查
+
+**新增与调整**
+
+- 删除应用更新中转页，设置与关于页直接检查最新正式版本
+- 内置正式仓库，启动联网自动检查，有新版才提示；离线不打扰
+- 关闭自动更新持久保存，可重新开启；稍后提醒下次启动再检查
+- 提示包含更新内容、发布时间、GitHub详情和立即更新
+- 自动下载、大小与SHA256校验后打开安装，主题进度及过渡动画
+
+**限制**
+
+- Android仍需系统安装确认，首次安装来源授权后可重试
+- 两端完整实机及实际升级安装仍待验收；本轮未卸载或清数据
 
 ## 1.7.1 · 关于与设置页面、发现书源和书籍删除
 
