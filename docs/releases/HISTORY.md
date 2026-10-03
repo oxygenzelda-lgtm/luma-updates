@@ -25,6 +25,7 @@
 | 1.4.0 | 2026-10-02 | 离线中文字体与小说排版 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.4.0) |
 | 1.5.0 | 2026-10-02 | 设置统一与自动智能整理 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.5.0) |
 | 1.6.0 | 2026-10-02 | 精简正式目录与分类设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0) |
+| 1.7.3 | 2026-10-03 | 分类规则管理、内置公开目录与更新设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.3) |
 | 1.7.2 | 2026-10-03 | 直接更新提示与启动自动检查 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.2) |
 | 1.7.1 | 2026-10-03 | 关于与设置页面、发现书源和书籍删除 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.1) |
 | 1.7.0 | 2026-10-03 | 统一设置动效、简介与更新入口 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.0) |
@@ -32,6 +33,19 @@
 旧版本用于回溯和比较。Android 通常不能直接覆盖降级；不要卸载来试旧版而丢失书库。Windows 旧版应解压到独立目录。历史包的早期自制验证样本与当时已知问题保留。
 
 本仓库是安装包与项目文档分发仓库；发布格式参照常见开源项目，尚不代表 Luma 源码已公开或选定开源许可证。
+
+
+## 2026-10-03 规则与更新设置（1.7.3+21，最新确认）
+
+- 规则管理移到主设置，分为小说书源与漫画书源，支持文件、链接导入及启停。删除书源参考整段和“尚未导入书源。本地阅读不受影响”文案。
+- 发现保留小说/漫画、搜索与筛选，删除书源分类标题、管理书源及刷新按钮；显示启用的规则，不显示本地书架。
+- 内置7份目录规则，来自3个项目：Project Gutenberg中/英/法小说目录3份（随包94个作品条目），Pepper & Carrot中/英/法漫画3份、xkcd英文漫画1份。规则由Luma编写；未复制第三方GPL规则。保留来源许可与作者署名。
+- 7份规则均完成实际搜索与代表作品下载校验；EPUB解析及漫画图片离线导入通过。不是全部作品或所有网络环境验收。Standard Ebooks样本未通过，未内置；番茄仍需服务、飞卢仍未验证。
+- 按最新要求，主设置“检查更新”进入完整设置页面：立即检查、启动检查开关、最近检查记录、清理更新下载缓存、发行版及更新来源外链。启动检查开关已从关于页移走；关于页主按钮仍可直接检查。
+- 新版提示中的稍后提醒、关闭自动更新、详情和立即更新及主题进度动画保留；离线启动静默。缓存清理仅删除更新器生成的APK/ZIP，不清理书库、小说或进度。
+- 验证：29项相关测试、静态分析、8张手机/桌面组件截图、两端release构建通过。原Android签名保留。完整实机流程、实际系统升级安装、退出重开及进度保留仍待验收。
+- 1.7.3两端包及5份附件已发布，当前21个正式版本、40份安装包、86份附件。生产检查逻辑通过公开最新清单识别1.7.2+20→1.7.3+21；本轮不重复下载历史包或执行系统安装。
+- 证据：evidence/release173-delivery.json、release173-built-in-sources.json、release173-cloud-update-check.json、rules-update-revision-2026-10-03.md。旧记录保留，下面1.7.1/1.7.2的旧入口要求以本节为准。
 
 
 ## 1.7.2 · 直接更新提示与启动自动检查
