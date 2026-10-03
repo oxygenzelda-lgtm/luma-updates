@@ -25,6 +25,7 @@
 | 1.4.0 | 2026-10-02 | 离线中文字体与小说排版 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.4.0) |
 | 1.5.0 | 2026-10-02 | 设置统一与自动智能整理 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.5.0) |
 | 1.6.0 | 2026-10-02 | 精简正式目录与分类设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0) |
+| 1.7.5 | 2026-10-04 | 独立搜索、更新检查修复、完整字体无损压缩 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.5) |
 | 1.7.4 | 2026-10-04 | 统一发现搜索、规则顶部栏与刷新 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.4) |
 | 1.7.3 | 2026-10-03 | 分类规则管理、内置公开目录与更新设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.3) |
 | 1.7.2 | 2026-10-03 | 直接更新提示与启动自动检查 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.2) |
@@ -35,6 +36,19 @@
 
 本仓库是安装包与项目文档分发仓库；发布格式参照常见开源项目，尚不代表 Luma 源码已公开或选定开源许可证。
 
+
+## 2026-10-04 独立搜索、更新修复与无损压缩（1.7.5+23，当前版本）
+
+- 发现与书架的搜索框是跳转入口，点击后进入独立搜索页，输入、提交和结果浏览都不显示主导航，返回主页后恢复。手机其他输入场景也在键盘弹出时隐藏主导航，避免被键盘顶到页面中间。Windows同样使用独立搜索页，保留键鼠操作。
+- 书架搜索匹配书名、作者、题材及多个关键词；书源搜索仍聚合当前分类下已启用兼容规则，保留加入书架及离线下载。主页的分类、筛选、刷新、导入和紧凑继续阅读保留。
+- 修复已复现的自动检查未结束时手动检查被忽略的问题：手动请求看到正在检查及最终结果，共用原请求，不重复弹窗。恢复应用时重新检查；损坏更新偏好恢复正式来源并保留异常备份，不触碰阅读数据。
+- 更新清单主渠道仍为正式Release的latest/download/luma-update.json，网络/超时失败时尝试仓库main/latest/luma-update.json，保持格式和附件SHA256校验。所有网络请求要求新鲜数据。备用清单不能保证所有网络都能访问GitHub安装包。
+- 完整原字体打包为XZ，工作线程解压并逐文件SHA256验证，与原字体字节完全一致，保留三套离线字体、中文/日文字符覆盖及许可。首次打开准备字体，之后复用缓存；安装占用包括恢复的字体及个人书库，不等于下载包大小。
+- Android原包50,969,663字节，新包31,287,525字节（31.29 MB / 29.84 MiB），缩小38.6%；满足30 MiB，尚未达到严格30,000,000字节目标。未删除字体、字形或阅读功能。Windows ZIP为35,251,278字节，比1.7.4的44,194,200字节减少20.2%。AOT调试符号只保留在本地delivery/symbols/1.7.5，勿公开。
+- 36项定向回归通过，包括搜索路由/键盘/返回、更新并发与备用清单、异常偏好、完整字体恢复/实际FontLoader注册/缓存损坏恢复及两端阅读设置。静态检查无问题；两端release构建、Android原签名、Windows20文件ZIP哈希通过；组件截图检查完成，未代替原生安装验收。
+- 1.7.5的两端安装包、说明、SHA256及清单已发布。当前云端23个Release、44份安装包、96份Release附件；历史索引原条目逐项保留，1.0.0仍是历史预发行。云端实际检查/下载结果另见release175-cloud-update-check.json，不据此声称系统安装已经验收。
+- 尚无已连接Android设备；两端真实云端安装、退出重开、触控/键鼠全流程及实机书库保留仍待验收。若旧客户端网络仍无法检查，应先覆盖安装新APK，不卸载或清数据。
+- 证据：evidence/release175-delivery.json、release175-cloud-update-check.json、release175-size.json、release175-tests.log、release175-analyze.log、release175-visual.log及release175-*.png。最新独立搜索要求覆盖1.7.4主页内联输入；其他完整需求继续继承。
 
 ## 2026-10-04 统一发现搜索与刷新（1.7.4+22，最新确认）
 
