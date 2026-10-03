@@ -1011,8 +1011,52 @@
       "githubAssetId": 608680247,
       "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.5/Luma-1.7.5-Windows-x64.zip",
       "remoteDigest": "sha256:17b5f9418cba3e4af8c5cca0b2424998cbe3617e680c8ccaf7eb8905f7fc7447"
+    },
+    {
+      "version": "1.7.6",
+      "build": 24,
+      "platform": "Android",
+      "architecture": [
+        "arm64-v8a"
+      ],
+      "debug": false,
+      "bundledTestSamples": false,
+      "sha256": "31d71ed85bc00ae541e218c2d995af3b32df4132e1611244c96337252a2c7af2",
+      "bytes": 31288125,
+      "originalFile": "Luma-1.7.6-Android-arm64.apk",
+      "aliases": [],
+      "assetName": "Luma-1.7.6-Android-arm64.apk",
+      "packageId": "com.example.luma_validation",
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.6",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 608709812,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.6/Luma-1.7.6-Android-arm64.apk",
+      "remoteDigest": "sha256:31d71ed85bc00ae541e218c2d995af3b32df4132e1611244c96337252a2c7af2"
+    },
+    {
+      "version": "1.7.6",
+      "build": 24,
+      "platform": "Windows",
+      "architecture": [
+        "x64"
+      ],
+      "debug": false,
+      "bundledTestSamples": false,
+      "sha256": "6d2b2874f648f50b5d069b029f8399a7c1caf8c4d4c3af9005651876c7f76398",
+      "bytes": 35251896,
+      "originalFile": "Luma-1.7.6-Windows-x64.zip",
+      "aliases": [],
+      "assetName": "Luma-1.7.6-Windows-x64.zip",
+      "packageId": "luma_validation.exe",
+      "uploadStatus": "uploaded_verified",
+      "releaseUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.6",
+      "verificationMethod": "github_asset_sha256",
+      "githubAssetId": 608710291,
+      "downloadUrl": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.6/Luma-1.7.6-Windows-x64.zip",
+      "remoteDigest": "sha256:6d2b2874f648f50b5d069b029f8399a7c1caf8c4d4c3af9005651876c7f76398"
     }
   ],
   "repositoryUrl": "https://github.com/oxygenzelda-lgtm/luma-updates",
-  "latestManifestVerifiedAt": "2026-10-03T22:55:02.057834+00:00"
+  "latestManifestVerifiedAt": "2026-10-03T23:20:12.259258+00:00"
 }
