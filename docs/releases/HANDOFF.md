@@ -18,7 +18,7 @@
 
 ## 当前实现
 
-Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 luma_validation.exe。当前版本1.7.1+19，历史19个版本36份不同包，最早留存1.0.0+1，没有0.01安装包。历史包内版本和哈希已核对。
+Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 luma_validation.exe。当前版本1.7.2+20，历史20个版本38份不同包，最早留存1.0.0+1，没有0.01安装包。历史包内版本和哈希已核对。
 
 1.7.0 已实现统一设置动效、可编辑作者与简介、单本导入自动识别与分类、重复导入保留信息，以及书源管理和 GitHub Releases 更新入口。自动功能测试99项通过、2项可选采集跳过，静态分析无问题；共享组件渲染采集另行通过。Android 已覆盖安装1.7.0并核对签名，完整触控实测仍待完成；Windows 新交付目录21个文件与构建和ZIP哈希一致，原生检查因用户Esc中断。不要把这些结果描述为全面实机验收或帧率证明。
 
@@ -38,13 +38,13 @@ Flutter / Dart；Android 包名 com.example.luma_validation；Windows 程序 lum
 
 ## 云端更新与发布
 
-已发布仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。19个版本、36份不同安装包已上传；远端附件大小与SHA256已核对。最新清单可通过 Releases/latest/download/luma-update.json 下载。具体附件和链接见 history-manifest.json。
+已发布仓库：https://github.com/oxygenzelda-lgtm/luma-updates 。20个版本、38份不同安装包已上传；远端附件大小与SHA256已核对。最新清单可通过 Releases/latest/download/luma-update.json 下载。具体附件和链接见 history-manifest.json。
 
 GitHub CLI授权和历史发布已完成。后续发布可用tools/publish_history.py核对并续传。凭据不写入交接文档。
 
-发布19个版本的独立Release，历史版本不设为Latest，1.7.1为最新正式版本。最新Release必须含原名称 Luma-1.7.1-Android-arm64.apk、Luma-1.7.1-Windows-x64.zip 和 luma-update.json。清单包含version、build、平台附件URL、大小和SHA256。修改附件名时同步修改清单。
+发布20个版本的独立Release，历史版本不设为Latest，1.7.2为最新正式版本。最新Release必须含原名称 Luma-1.7.2-Android-arm64.apk、Luma-1.7.2-Windows-x64.zip 和 luma-update.json。清单包含version、build、平台附件URL、大小和SHA256。修改附件名时同步修改清单。
 
-应用当前需在设置 → 关于Luma → 检查更新 → 更新来源配置仓库地址。无配置或网络失败时不应显示已是最新版。Android检查包名、版本和签名，由用户完成系统安装确认；Windows退出应用、保留旧目录备份并安装到新目录。云端发布后还需实测检查、下载与安装链路。
+1.7.2内置正式更新仓库：启动自动检查或设置内直接检查，关于页可控制启动检查；网络失败不能显示已是最新版。1.7.1及更早版本仍可能需要先配置仓库或手动下载安装1.7.2。Android检查包名、版本和签名，由用户完成系统安装确认；Windows退出应用、保留旧目录备份并安装到新目录。云端发布后还需实测检查、下载与安装链路。
 
 当前签名沿用个人本机Android Debug证书以保持覆盖升级；若换签名，旧安装不能直接覆盖。证书指纹 eeacd732ef8a691d828285dbab938a18c14b0a8e4a4c2804f904af76465cd9a0。签名私钥、凭据、个人小说和阅读历史不进入此分发仓库。
 
@@ -71,3 +71,11 @@ GitHub CLI授权和历史发布已完成。后续发布可用tools/publish_histo
 两端release构建、签名/包版本检查、Windows21文件ZIP校验通过；新增5份公开附件，最新清单已验证。每完成正式版本都须同步GitHub两端安装包、更新记录、SHA256与luma-update.json。旧版本需配置更新来源为本仓库，安装确认仍由用户完成。完整实机及云端更新安装仍待验收。此次未更改设备数据或当前活动Windows目录，也未提交/重置原工作树。
 
 发布后真实云端验证已通过：应用实际更新逻辑能识别1.7.0+18→1.7.1+19，Android及Windows安装包真实下载、大小及SHA256校验均通过。实际系统安装、退出重开及设备书库/进度保留验收仍未完成，本轮未卸载或清数据。详见evidence/release171-cloud-update-check.json。
+
+## 最新更新交互：1.7.2+20
+
+移除应用更新整页，设置和关于页直接检查；内置正式仓库；启动检查默认开启，离线静默；新版提示提供关闭自动更新、稍后提醒、GitHub详情和立即更新。关于页可以重新开启启动检查。立即更新下载校验后直接唤起安装，主题进度、准备安装与返回动画保留减少动画偏好。Android安装来源授权后可重试安装，Windows沿用备份旧目录及退出重开。未卸载或清数据，书库与进度未修改。两端构建和针对性测试通过，实际安装验收仍待完成。
+
+1.7.2两端包与5份公开附件已发布并核对，最新公开清单通过验证。详见evidence/release172-delivery.json。
+
+生产更新检查逻辑已从公开最新清单识别1.7.1+19→1.7.2+20，两端清单哈希及大小与本地交付一致。此次不重复下载整套安装包；新增附件已按GitHub远端SHA256校验。实际系统安装仍待验收。证据见evidence/release172-cloud-update-check.json。
