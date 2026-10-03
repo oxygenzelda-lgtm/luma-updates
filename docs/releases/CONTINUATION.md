@@ -53,3 +53,5 @@
 tools/publish_history.py维护发布状态；tools/verify_history_cloud.py核对本次归档。初始盘点/准备脚本可能重置发布状态，不应直接重跑覆盖旧索引。云端已完成发布，当前待办主要是未提交源码整理与实机验收。
 
 本轮发布验证见evidence/release171-delivery.json、evidence/release171-cloud-update-check.json。新增版本使用tools/publish_current_release.py增量发布；先更新release-notes.json和版本/构建号，只上传新版本的公开附件，不能运行旧版初始准备脚本覆盖历史状态。
+
+发布后真实云端验证已通过：应用实际更新逻辑能识别1.7.0+18→1.7.1+19，Android及Windows安装包真实下载、大小及SHA256校验均通过。实际系统安装、退出重开及设备书库/进度保留验收仍未完成，本轮未卸载或清数据。详见evidence/release171-cloud-update-check.json。
