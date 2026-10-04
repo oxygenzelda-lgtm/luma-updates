@@ -14,6 +14,10 @@
 
 本报告不构成“无漏洞”保证，也不能从测试数量推算全软件bug率。原生编解码器、Flutter/Dart及依赖仍需持续维护。没有连接Android设备；真实输入法、持续帧率、设备内存压力和系统升级安装仍待两端实机验收，不能把下载校验通过当作安装成功。
 
+### 依赖已知漏洞查询（2026-10-04）
+
+按实际pubspec.lock中66个托管Pub包的名称和锁定版本，通过[OSV批量查询API](https://google.github.io/osv.dev/post-v1-querybatch/)检查；[OSV覆盖Pub生态](https://google.github.io/osv.dev/data/)。本次未返回已知漏洞匹配，证据为evidence/release180-dependencies.json。只发送公开包名和版本，没有上传源码、小说、账号、凭据或阅读记录。该结果只覆盖数据库已收录的公告，不涵盖全部Flutter引擎、系统原生编解码器、Java/Maven依赖或尚未公开漏洞；不是安全认证。1.8.1未更换这些锁定依赖。
+
 ## Detailed audit
 
 Scope: source import/store/parser; discovery metadata, history and favorites; outbound requests, redirects and downloads; local EPUB/DOCX/CBZ imports; update manifests, SHA256, Windows staging and Android installation identity. Static review plus hostile-input regression and live endpoint checks. No penetration-test certification or universal bug-rate claim.
