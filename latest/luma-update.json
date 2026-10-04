@@ -1,28 +1,34 @@
 {
   "schemaVersion": 1,
-  "version": "1.7.6",
-  "build": 24,
-  "publishedAt": "2026-10-03T23:19:01.494482+00:00",
+  "version": "1.8.0",
+  "build": 25,
+  "publishedAt": "2026-10-04T00:43:43.094778+00:00",
   "changes": [
-    "继承1.7.5的独立搜索页、键盘隐藏导航及完整离线字体无损压缩",
-    "书架搜索页从搜索框位置展开并原路返回，电脑端动画使用应用区域坐标"
+    "发现页展示在线收藏、按本机阅读和搜索偏好排序的作品，以及交错排列的各书源目录",
+    "书源从7个扩展到18个语言目录：8个文学目录、2个维基文库篇目目录、7个Pepper & Carrot语言目录和xkcd；附246条可离线检索的文学书目元数据",
+    "新增中文和日文维基文库篇目读取，文学目录支持在线扩展查询，在线收藏不自动下载",
+    "筛选可勾选小说或漫画书源并保存在本机，独立搜索页提供首字联想、历史词及在线结果补充",
+    "手机和Windows发现、书架及设置过渡统一为平滑双向位移淡入，保持减少动画偏好",
+    "确定版本规则：较大功能或页面改动递增次版本，小修改递增补丁，首位1保持不变"
   ],
   "fixes": [
-    "关闭自动检查时，同时触发的手动检查仍执行并返回最终结果",
-    "手动检查等待共用请求结束后再刷新设置中的最近检查记录，避免过早恢复按钮及旧记录",
-    "更新反馈清除过期排队提示，避免重复正在检查延迟最终结果展示"
+    "修复发现页空白、筛选仅切换书名匹配而无法选择来源、返回搜索页闪现加载的问题",
+    "防止过时的搜索和目录刷新结果覆盖当前分类、输入或筛选状态",
+    "阻止书源访问本机内网与保留地址；直连DNS校验后固定到实际连接，逐次验证重定向",
+    "导入规则不能伪装内置解析器；限制规则长度、解析展开、网络容量与请求总时长",
+    "EPUB、DOCX与Windows更新包增加实际解压字节限制，保留既有路径穿越、符号链接、容量及更新哈希保护"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.6/Luma-1.7.6-Android-arm64.apk",
-      "bytes": 31288125,
-      "sha256": "31d71ed85bc00ae541e218c2d995af3b32df4132e1611244c96337252a2c7af2"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.8.0/Luma-1.8.0-Android-arm64.apk",
+      "bytes": 31348557,
+      "sha256": "52ec57a76c2374442ad02380ee16068a9246acc71191bbb733df09309e4ca84f"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.7.6/Luma-1.7.6-Windows-x64.zip",
-      "bytes": 35251896,
-      "sha256": "6d2b2874f648f50b5d069b029f8399a7c1caf8c4d4c3af9005651876c7f76398"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.8.0/Luma-1.8.0-Windows-x64.zip",
+      "bytes": 35322304,
+      "sha256": "a7f0d22f8e1dab72ed944e9f5a4b199409ff2e344629cf9897bf54ab85509cda"
     }
   }
 }
