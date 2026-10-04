@@ -1,31 +1,27 @@
 {
   "schemaVersion": 1,
-  "version": "1.10.0",
-  "build": 28,
-  "publishedAt": "2026-10-04T05:37:04.481012+00:00",
+  "version": "1.10.1",
+  "build": 29,
+  "publishedAt": "2026-10-04T10:52:39.537709+00:00",
   "changes": [
-    "精确移除18个旧默认目录，换为番茄、飞卢、日本轻小说/漫画Bangumi与Narou共5个资料入口",
-    "按来源类别、具体来源、组合题材标签和有封面条件筛选，作品标签参与搜索联想",
-    "原站真实封面保持原比例，补全作者、简介、标签和信息出处；缺失简介用明确标注的内容概述",
-    "来源管理增加逐源检验、删除/恢复默认来源、失败封面重试"
+    "保留1.10.0的分类/书源/题材筛选、来源管理、真实作品资料与原站入口"
   ],
   "fixes": [
-    "飞卢使用紧凑GBK编码修复中文查询失配；日本书目接口连接失败回退官方网页核验",
-    "修复番茄加载占位图冒充封面与旧封面CDN拒绝访问，保留同一图片ID和原比例",
-    "网络错误、验证码与真实空结果分别显示；修复失效分类与默认源删除后重现",
-    "保留个人书库、进度、自定义规则，旧规则备份；导入身份隔离和POST重定向保护"
+    "DNS混合返回时过滤被拒绝的地址，直接连接校验通过的公网IP，修复手机封面误拦截",
+    "全部为内网/回环/保留地址时仍不连接，固定已校验IP，TLS及重定向保护不降级",
+    "删除临时诊断输出，两端恢复正式构建"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.10.0/Luma-1.10.0-Android-arm64.apk",
-      "bytes": 31552585,
-      "sha256": "9be4d477c6311764b552e83ab81081ea65924cfa3a93e6c8b6513b76903bd5b5"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.10.1/Luma-1.10.1-Android-arm64.apk",
+      "bytes": 31552061,
+      "sha256": "f1b7fc0134169d730f9e2fe8f0cbdbb8df2785af19358c97ae2ba6b2a5a32c8f"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.10.0/Luma-1.10.0-Windows-x64.zip",
-      "bytes": 36230810,
-      "sha256": "326249696fcb9527a1354ce1574e6cc3955efaf907aaa73b24ed399afb6346cf"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.10.1/Luma-1.10.1-Windows-x64.zip",
+      "bytes": 36231053,
+      "sha256": "d6c7600054c62aa54094ad06b24207411d1ea07588c5e9937953b9bb07784648"
     }
   }
 }
