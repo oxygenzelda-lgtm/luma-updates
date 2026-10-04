@@ -541,5 +541,28 @@
       "evidence/release180-delivery.json",
       "evidence/release180-cloud-update-check.json"
     ]
+  },
+  "1.8.1": {
+    "date": "2026-10-04",
+    "title": "慢速网络安装包下载修补",
+    "changes": [
+      "完整继承1.8.0的发现书目、18个语言目录、在线收藏、来源筛选、搜索联想、本机推荐、双向过渡及安全机制"
+    ],
+    "fixes": [
+      "安装包下载总时限单独设为15分钟，避免慢速网络仍持续下载时被三分钟时限打断",
+      "继续保留30秒无进度超时、严格大小/SHA256校验、Android安装身份检查与Windows暂存/回退"
+    ],
+    "limits": [
+      "外部网站与GitHub可达性取决于设备网络，超时或校验失败不会安装不完整包",
+      "未连接Android设备，系统安装、实机帧率、输入法和个人书库保留仍待验收",
+      "保留完整离线字体，严格30,000,000字节包体目标仍未达到"
+    ],
+    "evidence": [
+      "evidence/release181-tests.log",
+      "evidence/release181-analyze.log",
+      "evidence/release181-delivery.json",
+      "evidence/release181-cloud-update-check.json",
+      "evidence/release180-security-review.md"
+    ]
   }
 }
