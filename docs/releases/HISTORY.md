@@ -27,6 +27,7 @@
 | 1.6.0 | 2026-10-02 | 精简正式目录与分类设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0) |
 | 1.7.6 | 2026-10-04 | 搜索入口展开与并发手动更新修补 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.6) |
 | 1.8.0 | 2026-10-04 | 发现书目、在线收藏、来源筛选、联想与安全加固 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.8.0) |
+| 1.8.1 | 2026-10-04 | 慢速网络安装包下载时限修补 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.8.1) |
 | 1.7.5 | 2026-10-04 | 独立搜索、更新检查修复、完整字体无损压缩 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.5) |
 | 1.7.4 | 2026-10-04 | 统一发现搜索、规则顶部栏与刷新 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.4) |
 | 1.7.3 | 2026-10-03 | 分类规则管理、内置公开目录与更新设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.3) |
@@ -38,6 +39,17 @@
 
 本仓库是安装包与项目文档分发仓库；发布格式参照常见开源项目，尚不代表 Luma 源码已公开或选定开源许可证。
 
+
+## 2026-10-04 慢速安装包下载修补（1.8.1+26，当前版本）
+
+- 最新正式版本1.8.1+26。完全继承下方1.8.0的大版本功能、所有更早需求和数据保留要求；本次只修更新下载时限，符合用户的小修递增补丁约定。
+- 1.8.0生产检查能检测新版且备用清单一致，但两次实际下载在持续有进度时超过三分钟总时限，未完成包校验。证据保留release180-cloud-update-check.json及失败日志；不把1.8.0的下载记录说成通过。
+- 安装包请求改为单独15分钟总时限，仍保留30秒无进度超时、响应大小限制、完成后SHA256以及安装包身份检查。普通书源/清单请求继续采用原短时限；没有删除安全机制。
+- 144项全套回归通过，7项可选截图采集跳过；静态检查无问题。新增测试覆盖持续下载的慢链路预算及可捕获的网络总超时。两端release构建、Android包名/原签名和Windows20文件ZIP哈希核对通过。1.8.0已核对的18个目录、3种下载解析及21张两端截图继续有效，页面代码未改。
+- Android 31,348,449字节（31.35 MB / 29.90 MiB）；Windows ZIP 35,322,144字节。完整离线字体与字形保留；严格30,000,000字节目标仍未达到。
+- 云端26个Release、50份不同安装包、111份附件；原48份包索引逐项保留，1.8.0包不替换。公开清单与附件远端摘要已核对，最新生产下载验证尚待完成，不能把发布当作安装成功。
+- 完整实机安装、触控/键鼠、输入法、持续帧率和重开书库保留仍待验收。本轮没有连接Android设备；不能卸载或清数据验证升级。
+- 证据：evidence/release181-tests.log、release181-analyze.log、release181-delivery.json、release181-cloud-update-check.json、release181-size.json，1.8.0安全报告与完整需求继续保留。本节为最新状态，下面的“当前/最新”是各次发布时的历史记录。
 
 ## 2026-10-04 发现书目与安全加固（1.8.0+25，当前版本）
 
