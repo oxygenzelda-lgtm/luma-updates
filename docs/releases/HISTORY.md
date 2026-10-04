@@ -26,6 +26,7 @@
 | 1.5.0 | 2026-10-02 | 设置统一与自动智能整理 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.5.0) |
 | 1.6.0 | 2026-10-02 | 精简正式目录与分类设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.6.0) |
 | 1.7.6 | 2026-10-04 | 搜索入口展开与并发手动更新修补 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.6) |
+| 1.8.0 | 2026-10-04 | 发现书目、在线收藏、来源筛选、联想与安全加固 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.8.0) |
 | 1.7.5 | 2026-10-04 | 独立搜索、更新检查修复、完整字体无损压缩 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.5) |
 | 1.7.4 | 2026-10-04 | 统一发现搜索、规则顶部栏与刷新 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.4) |
 | 1.7.3 | 2026-10-03 | 分类规则管理、内置公开目录与更新设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.3) |
@@ -37,6 +38,22 @@
 
 本仓库是安装包与项目文档分发仓库；发布格式参照常见开源项目，尚不代表 Luma 源码已公开或选定开源许可证。
 
+
+## 2026-10-04 发现书目与安全加固（1.8.0+25，当前版本）
+
+- 当前版本1.8.0+25；本节是最新状态，下面旧版“当前/最新”文字是各次发布时的历史记录。保留全部此前要求、原书库与阅读进度、Android包名及原签名、Windows键鼠与手机触控区别。
+- 内置18个语言目录，覆盖4个平台：古腾堡8种文学语言目录、中文/日文维基文库篇目、Pepper & Carrot七种语言及xkcd。附246条文学书目元数据。18不是18个独立网站；没有新增经验证适配的番茄或飞卢完整源。
+- 发现页展示“在线收藏”“为你发现”“浏览书目”；收藏与下载分离，收藏不自动下载。推荐按本机阅读、搜索、内容关键词、来源与时间排序，可清除偏好而保留书库和收藏；没有联网AI画像服务。
+- 筛选能逐项勾选当前小说/漫画的兼容已启用来源，选择独立保存；首字本地联想、历史词及在线查询补充，点联想搜索。主页继续作为独立搜索入口，搜索/键盘输入隐藏导航，Windows保留鼠标键盘交互。
+- 修复手机外层随切换重建而丢失动画状态的问题；双向短位移与淡入、出场禁用点击和减少动画偏好保留。返回搜索不重新显示加载页，旧搜索/刷新结果不能覆盖当前分类或筛选。
+- 加固内网/保留IP与DNS重绑定、逐次重定向验证、规则内置身份伪装、解析长度/深度/展开、网络总时长、发现有界缓存，以及实际解压输出和文本大小。详见SECURITY-1.8.0.md；安全审查不等于不存在漏洞。
+- 142项全套测试通过，7项可选采集跳过；另3项截图采集通过，21张两端组件截图已检查；静态检查无问题。18个目录均真实联网返回作品，中文篇目、日文EPUB及西班牙语漫画实际下载并解析通过。两端正式构建、包身份/原签名及Windows完整ZIP文件哈希已核对。
+- Android包31,348,557字节（31.35 MB / 29.90 MiB），Windows ZIP 35,322,304字节。保留完整离线字体与字形，无损压缩沿用；严格30,000,000字节目标仍未达到，不得把MiB误说成MB。符号文件仅保留本地。
+- 当前云端25个Release、48份不同安装包、106份附件；历史46份包索引条目逐项保持不变，1.0.0仍是历史预发行。发布清单与附件远端摘要已核对；生产下载验证待完成，不能声称安装已完成。
+- 维基文库仅下载当前篇目，不打包目录链接或跨页整部书。复杂JavaScript、登录、解密与复杂分页仍不兼容；来源可用性会随外站变化。
+- 原生Android/Windows升级安装、真实输入法、持续帧率与内存压力、退出重开及个人书库保留仍待实机验收。本轮没有连接Android设备；不得卸载或清数据验证升级。
+- 版本规则：大功能/页面调整递增次版本（1.9.0、1.10.0），小改动/bug修复递增补丁（1.8.1），首位1保持不变，除非用户明确同意重大工程升级。每次正式版必须发布两端包、SHA256、更新清单与完整接续文档。
+- 证据：release180-all-tests-final.log、release180-analyze-final.log、release180-visual-final.log、release180-source-check.json、release180-security-review.md、release180-delivery.json、release180-size.json及release180-cloud-update-check.json，均在本地evidence目录；公开安全报告同步到云端docs/releases/SECURITY-1.8.0.md。
 
 ## 2026-10-04 最终搜索与更新修补（1.7.6+24，当前版本）
 
