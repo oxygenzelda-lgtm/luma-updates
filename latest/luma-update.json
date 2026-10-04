@@ -1,27 +1,26 @@
 {
   "schemaVersion": 1,
-  "version": "1.10.1",
-  "build": 29,
-  "publishedAt": "2026-10-04T10:52:39.537709+00:00",
+  "version": "1.12.1",
+  "build": 32,
+  "publishedAt": "2026-10-04T14:50:38.505394+00:00",
   "changes": [
-    "保留1.10.0的分类/书源/题材筛选、来源管理、真实作品资料与原站入口"
+    "继承1.12.0近期发现、独立分页、设置分组与更新连接修复"
   ],
   "fixes": [
-    "DNS混合返回时过滤被拒绝的地址，直接连接校验通过的公网IP，修复手机封面误拦截",
-    "全部为内网/回环/保留地址时仍不连接，固定已校验IP，TLS及重定向保护不降级",
-    "删除临时诊断输出，两端恢复正式构建"
+    "实机核对发现番茄榜单使用p3/p6/p9-novel-sign.byteimg.com签名图片域名，旧规则未转换，导致手机Fake-IP网络下封面回退占位",
+    "仅将已知HTTPS官方图片域名和明确的原图ID转换到既有可信公共图片CDN，保留比例、图片响应/像素/并发/缓存限额，不允许任意规则扩展白名单"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.10.1/Luma-1.10.1-Android-arm64.apk",
-      "bytes": 31552061,
-      "sha256": "f1b7fc0134169d730f9e2fe8f0cbdbb8df2785af19358c97ae2ba6b2a5a32c8f"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.12.1/Luma-1.12.1-Android-arm64.apk",
+      "bytes": 32391593,
+      "sha256": "4c8f376bef6a5feaff6ef7e6ee20900bd9985a503ac77124843d7ab59319fe32"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.10.1/Luma-1.10.1-Windows-x64.zip",
-      "bytes": 36231053,
-      "sha256": "d6c7600054c62aa54094ad06b24207411d1ea07588c5e9937953b9bb07784648"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.12.1/Luma-1.12.1-Windows-x64.zip",
+      "bytes": 36522102,
+      "sha256": "dac3127da10545a4dc909db33c067fa4ca249ec5ea549c9353ba42089a0a1b82"
     }
   }
 }
