@@ -564,5 +564,33 @@
       "evidence/release181-cloud-update-check.json",
       "evidence/release180-security-review.md"
     ]
+  },
+  "1.9.0": {
+    "date": "2026-10-04",
+    "title": "发现、搜索与作品详情布局更新",
+    "changes": [
+      "发现页改为紧凑作品网格，顶部小说/漫画、搜索和筛选固定，作品区域独立滚动",
+      "手机支持两列/三列，窄屏和大字体自适应；Windows保留键鼠操作并按宽度排布",
+      "书源列表收进分组筛选，增加语言、在线收藏/下载状态、排序和列数，条件保存在本机",
+      "真实封面优先，作品详情展示封面、作者、简介、来源和已知语言版本，点击卡片展开并返回原位置"
+    ],
+    "fixes": [
+      "同一Pepper & Carrot篇目的已知语言版本合并展示；不同卷、不同出版URL保持独立",
+      "已有书籍显示开始/继续阅读，不重复下载，保留原书与阅读进度",
+      "修正返回搜索时旧缓存覆盖刚修改的收藏、筛选后旧滚动位置导致空白",
+      "封面继续使用安全网络检查；限制2个并发、24个待处理请求、2MiB响应、16MP像素和12MiB缓存"
+    ],
+    "limits": [
+      "Android/Windows原生安装、输入法和持续帧率仍待实机验收，本轮没有连接Android设备",
+      "书源仍是18个语言目录、4个平台；番茄/飞卢完整可用适配器未验证，没有虚构新增书源",
+      "未知版本不按同名自动合并；缺少封面或简介时保留占位和准确提示",
+      "完整离线字体保留，严格30MB目标以实际安装包大小为准，不能把MiB等同MB"
+    ],
+    "evidence": [
+      "evidence/release190-tests.log",
+      "evidence/release190-analyze.log",
+      "evidence/release190-delivery.json",
+      "evidence/release190-cloud-update-check.json"
+    ]
   }
 }
