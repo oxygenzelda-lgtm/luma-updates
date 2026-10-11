@@ -1,28 +1,32 @@
 {
   "schemaVersion": 1,
-  "version": "1.12.2",
-  "build": 33,
-  "publishedAt": "2026-10-11T11:39:56.773092+00:00",
+  "version": "1.13.0",
+  "build": 34,
+  "publishedAt": "2026-10-11T15:34:39.719009+00:00",
   "changes": [
-    "封面区分缺失、加载与失败状态，失败卡片提供单独重试，保留来源管理统一重试与中央打开详情"
+    "新增本地.lumabackup备份恢复，包含正文、图片、阅读进度、书签和偏好；恢复预览按身份保留已有书籍，偏好需主动勾选",
+    "小说原文锚点与漫画原图书签，支持跳转、返回原位置、改名与删除",
+    "持久下载任务支持取消、重试、删除，离开页面继续；重开后手动重试，不自动联网",
+    "复用校验通过的公开章节检查点，严格校验旧正文/目录前缀后追加新章节，保留自改信息、进度、书签及封面",
+    "来源区分资料、公开正文与本地离线可读，任务显示真实已知/未知进度"
   ],
   "fixes": [
-    "单本进度读取失败逐本隔离，不再影响其他书籍和阅读记录",
-    "无法读取进度时阻止错误开书，提示检查占用或权限，不从开头静默覆盖原进度",
-    "损坏封面磁盘缓存同次请求回退到网络并重新验证缓存",
-    "保持24个待处理及2个并发上限，可见卡片在容量释放后补请求，已移除卡片不再等待"
+    "恢复事务回滚和终态清理可重复执行，拒绝非法偏好字段及路径/摘要/解压限额异常",
+    "书签重新分页时重建视图，修复页码已变而正文仍停在旧页",
+    "下载重试写盘失败恢复原状态，取消、删除或恢复后的迟到结果不提交书架",
+    "沿用原书库、应用身份、签名、离线字体及既有封面/网络安全限额"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.12.2/Luma-1.12.2-Android-arm64.apk",
-      "bytes": 31723089,
-      "sha256": "9a2cf224ff05be06713ddb2c06f39155987c76ef121e80b5da2010ca25f06109"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.13.0/Luma-1.13.0-Android-arm64.apk",
+      "bytes": 31857005,
+      "sha256": "ced33736c21138b2a55d3d4adf0a2b08b6a41304d6658eef2659455c16ae0630"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.12.2/Luma-1.12.2-Windows-x64.zip",
-      "bytes": 35713410,
-      "sha256": "a1403dfcc8c5983e2db01e867d817417de947aef530c72b527462889258d12f5"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.13.0/Luma-1.13.0-Windows-x64.zip",
+      "bytes": 35864805,
+      "sha256": "4023a9b44de72def9ee1a47e56dac7183f498c2825e2e52d486e12cd93c944d9"
     }
   }
 }
