@@ -1,26 +1,28 @@
 {
   "schemaVersion": 1,
-  "version": "1.12.1",
-  "build": 32,
-  "publishedAt": "2026-10-04T14:50:38.505394+00:00",
+  "version": "1.12.2",
+  "build": 33,
+  "publishedAt": "2026-10-11T11:39:56.773092+00:00",
   "changes": [
-    "继承1.12.0近期发现、独立分页、设置分组与更新连接修复"
+    "封面区分缺失、加载与失败状态，失败卡片提供单独重试，保留来源管理统一重试与中央打开详情"
   ],
   "fixes": [
-    "实机核对发现番茄榜单使用p3/p6/p9-novel-sign.byteimg.com签名图片域名，旧规则未转换，导致手机Fake-IP网络下封面回退占位",
-    "仅将已知HTTPS官方图片域名和明确的原图ID转换到既有可信公共图片CDN，保留比例、图片响应/像素/并发/缓存限额，不允许任意规则扩展白名单"
+    "单本进度读取失败逐本隔离，不再影响其他书籍和阅读记录",
+    "无法读取进度时阻止错误开书，提示检查占用或权限，不从开头静默覆盖原进度",
+    "损坏封面磁盘缓存同次请求回退到网络并重新验证缓存",
+    "保持24个待处理及2个并发上限，可见卡片在容量释放后补请求，已移除卡片不再等待"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.12.1/Luma-1.12.1-Android-arm64.apk",
-      "bytes": 32391593,
-      "sha256": "4c8f376bef6a5feaff6ef7e6ee20900bd9985a503ac77124843d7ab59319fe32"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.12.2/Luma-1.12.2-Android-arm64.apk",
+      "bytes": 31723089,
+      "sha256": "9a2cf224ff05be06713ddb2c06f39155987c76ef121e80b5da2010ca25f06109"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.12.1/Luma-1.12.1-Windows-x64.zip",
-      "bytes": 36522102,
-      "sha256": "dac3127da10545a4dc909db33c067fa4ca249ec5ea549c9353ba42089a0a1b82"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.12.2/Luma-1.12.2-Windows-x64.zip",
+      "bytes": 35713410,
+      "sha256": "a1403dfcc8c5983e2db01e867d817417de947aef530c72b527462889258d12f5"
     }
   }
 }
