@@ -1,6 +1,6 @@
 # Luma 项目交接 · 给新聊天的起点
 
-更新日期：2026-10-04。先读本文，再读 HISTORY.md、history-manifest.json 与 release-notes.json。以文件和实测结果为准，不根据聊天中的单字母答案反推未记录的选择。
+更新日期：2026-10-11。先读本文，再读 HISTORY.md、history-manifest.json 与 release-notes.json。以文件和实测结果为准，不根据聊天中的单字母答案反推未记录的选择。
 
 完整的此前产品要求及后续验收顺序见[CONTINUATION.md](CONTINUATION.md)，不要只衔接最近一次上传。
 
