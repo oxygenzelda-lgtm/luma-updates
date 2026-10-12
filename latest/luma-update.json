@@ -1,29 +1,26 @@
 {
   "schemaVersion": 1,
-  "version": "1.15.0",
-  "build": 36,
-  "publishedAt": "2026-10-12T10:02:49.787093+00:00",
+  "version": "1.15.1",
+  "build": 37,
+  "publishedAt": "2026-10-12T12:26:11.692013+00:00",
   "changes": [
-    "EPUB原书导航、NCX及内容文件目录，TXT/Markdown自动识别章节标题",
-    "小说章节目录筛选、当前章节、上下章跳转和独立返回；Windows Ctrl+J",
-    "旧书根据已保存正文重建目录，支持取消，搜索与书签显示所属章节"
+    "官方来源与封面固定白名单兼容VPN Fake-IP路由，Windows直连可获取目录与真实封面"
   ],
   "fixes": [
-    "支持中文编码fragment及空行内锚点，保持原始正文分块与阅读位置",
-    "失效nav继续尝试有效NCX，按唯一位置限制目录，超限不保存伪完整重建",
-    "目录写盘失败和过期正文拒绝覆盖，保留损坏原字段与原数据"
+    "修复VPN假DNS让全部来源被误判为不安全地址；普通规则、私网与HTTPS检查保持",
+    "仅对固定官方HTTPS主机和443放行198.18/15路由，证书/SNI/重定向逐跳校验保持"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.15.0/Luma-1.15.0-Android-arm64.apk",
-      "bytes": 31893417,
-      "sha256": "c3b73337e274edeca4930faa3aee4d4aaff743e2f6ebb09d23b0004eb0aade9b"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.15.1/Luma-1.15.1-Android-arm64.apk",
+      "bytes": 31893361,
+      "sha256": "efd37f845e95c9a87b394dd3b1c34c8de65647b763424c5ffa5a8b32c39de20a"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.15.0/Luma-1.15.0-Windows-x64.zip",
-      "bytes": 35904569,
-      "sha256": "a9a2e0558498dae0279b9ab6b74c07bafae13149693562970da0c8bb753731fe"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.15.1/Luma-1.15.1-Windows-x64.zip",
+      "bytes": 35904605,
+      "sha256": "ae64e4f10b2c1d732325171a24011ea8a719c6a1467eeb701e8f495d5f69ebfc"
     }
   }
 }
