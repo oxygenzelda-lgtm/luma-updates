@@ -1,10 +1,21 @@
 # Luma 更新记录与历史安装包
 
-记录日期：2026-10-11。版本号来自 APK manifest 与 Windows EXE 产品版本；文件字节保持原样。当前上传状态见下表，不能将准备好的文件理解为已发布。
+记录日期：2026-10-12。版本号来自 APK manifest 与 Windows EXE 产品版本；文件字节保持原样。当前上传状态见下表，不能将准备好的文件理解为已发布。
 
 最早留存包为 1.0.0+1。未找到 0.01 安装包；早期项目配置也采用 1.0.0+1，不制造缺失版本。
 
-## 2026-10-12 书内全文搜索与原文跳转（1.14.0+35，当前正式版）
+## 2026-10-12 章节目录与原文定位（1.15.0+36，当前正式版）
+
+- 新增小说章节目录、筛选、当前章节、上下章跳转、独立返回位置与Windows Ctrl+J。搜索和书签显示可确认所属章节；三种返回点独立，字号/旋转后维持原文位置。
+- 新EPUB优先可用nav→NCX→spine，支持中文编码fragment和空行内锚点，不改变正文分块。TXT/Markdown新导入自动识别，旧书可取消重建；按原文UTF-16锚点，每书5000项/标题120码点/重建64Mi上限。大目录按唯一目标计数，超限不保存伪完整目录，保留原文/原目录及明确降级说明。
+- 目录更新核对当前正文快照，在DataCoordinator内仅更新目录，保留最新书名/封面/用户信息；坏可选字段不阻断阅读或被普通编辑静默抹掉，备份严格拒绝非法目录。显式重建保留修改前本机副本，旧备份仍可恢复。
+- 291项完整回归通过、8项可选采集跳过，静态分析无问题；独立只读审查6项Important均复现并修正：中文fragment、空锚点、唯一位置上限/截断说明、截断重建拒绝、NCX回退、新TXT/MD自动目录。7项中英文/大字号/横屏键盘布局、实际阅读器与三种独立返回点验证通过。存储竞争回归不等于完整实机恢复交错验收。
+- Android15/API35独立合成书库模拟器验证80章重建、键盘筛选、实际正文跳转和返回；QA包不公开。Windows系统文件选择器、实体持续性能和完整系统内升级安装仍待独立验收。
+- 两端正式默认入口、原签名/身份/五字体与Windows全文件核验；Android ARM64 31,893,417字节，WindowsZIP 35,904,569字节。锁定67个Pub依赖公开公告查询0匹配，仅为已知公告范围。
+- 主发布清单已验证；两端生产下载摘要检查进行中，未将该项计为完成。系统安装仍需用户确认。仅增量发布五附件；旧35Release资产ID/名称/字节/摘要及原索引保持，现有36Release/70不同包/161附件。私人阅读数据、诊断、签名、交接和完整源码未公开。
+- 完整此前需求继续继承；以下“当前/最新”按历史日期解释。证据：release1150-tests-final.log、release1150-analyze-final.log、RELEASE1150_REVIEW.md、release1150-review-red.log、release1150-review-green2.log、release1150-catalog-benchmark.json、release1150-delivery.json、release1150-cloud-update-check.json。
+
+## 2026-10-12 书内全文搜索与原文跳转（1.14.0+35，历史正式版）
 
 - 小说阅读器新增离线整本正文搜索，字面量匹配、可选ASCII英文大小写忽略、摘要高亮和原文锚点跳转；搜索与书签各自保存返回点。Windows支持Ctrl+F和Esc；退出或取消检索不移动阅读进度，改字号和窗口后保持目标原文。
 - 文本快照只传入工作isolate一次，分片扫描，250ms输入防抖，取消和查询代次保护；结果懒加载。查询最多128个Unicode码点，展示前200条，总正文上限64Mi UTF-16代码单元；不跨TextBlock、无图片OCR、无全书库持久索引、不搜索未下载或资料元数据。查询与摘要不写盘或上传。
@@ -130,6 +141,7 @@
 | 1.12.2 | 2026-10-11 | 阅读进度保护、封面缓存及队列恢复与重试 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.12.2) |
 | 1.13.0 | 2026-10-11 | 本地备份恢复、阅读书签、持久下载任务与可读能力 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.13.0) |
 | 1.14.0 | 2026-10-12 | 书内全文搜索、原文跳转与返回 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.14.0) |
+| 1.15.0 | 2026-10-12 | 章节目录、旧书重建与原文定位 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.15.0) |
 | 1.7.5 | 2026-10-04 | 独立搜索、更新检查修复、完整字体无损压缩 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.5) |
 | 1.7.4 | 2026-10-04 | 统一发现搜索、规则顶部栏与刷新 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.4) |
 | 1.7.3 | 2026-10-03 | 分类规则管理、内置公开目录与更新设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.3) |
