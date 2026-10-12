@@ -4,7 +4,17 @@
 
 最早留存包为 1.0.0+1。未找到 0.01 安装包；早期项目配置也采用 1.0.0+1，不制造缺失版本。
 
-## 2026-10-12 章节目录与原文定位（1.15.0+36，当前正式版）
+## 2026-10-12 官方来源VPN连接兼容修补（1.15.1+37，当前正式版）
+
+- 本机默认直连复现五个内置来源全部被VPN假DNS198.18/15误判为不安全地址；仅针对编译固定白名单的官方HTTPS/443请求增加VPN路由兼容，普通规则/私网/凭据/异常端口仍拒绝，原SNI/证书验证及逐跳检查保持。不全局关闭DNS安全检查、不添加自动代理或扩大任意来源权限。
+- 修补后本机默认直连验证番茄、飞卢、两类Bangumi目录及真实封面恢复，生产封面解码与示例视觉检查通过，飞卢一个公开章节下载验证。不能据此声称Android/所有设备VPN故障全部解决；Android已有原生publisher路径未改。
+- 294项全套回归通过、8项可选采集跳过、静态分析无问题；三项新socket/TLS边界测试先RED后GREEN。独立审查0Critical/0Important/0Minor；规则网络、私网和坏证书仍拒绝。锁定67Pub依赖公开公告查询0匹配，仅代表已知公告范围。
+- 番茄特殊字体正文仍拒绝乱码、Narou本机403未解决、日本漫画Bangumi仍只提供资料。当前来源少、可读漫画不足的需求继续保留；后续按真实正文/漫画页验证扩充，不能用增加资料条目冒充可读来源。1.16书架整理设计保留，后续构建号按本次插入补丁顺延。
+- 两端正式默认入口、原Android签名/应用身份/五字体及Windows全文件验证；AndroidARM64 31,893,361字节，WindowsZIP 35,904,605字节。旧36Release资产ID/名称/字节/摘要和索引保持，现有37Release/72不同包/166附件，仅新增本版五附件。
+- 主发布清单已验证；两端生产下载摘要检查进行中，未将该项计为完成。完整系统内升级安装、Windows原生选择器、实体持续性能及用户设备网络验收仍须分别验证。私人书库、读取记录、网络诊断和完整源码未公开。
+- 完整此前需求继续继承。证据：release1151-tests-final.log、release1151-analyze-final.log、RELEASE1151_REVIEW.md、release1151-network-red2.log、release1151-network-green.log、release1151-delivery.json、release1151-cloud-update-check.json；详细现场网络证据仅本机。
+
+## 2026-10-12 章节目录与原文定位（1.15.0+36，历史正式版）
 
 - 新增小说章节目录、筛选、当前章节、上下章跳转、独立返回位置与Windows Ctrl+J。搜索和书签显示可确认所属章节；三种返回点独立，字号/旋转后维持原文位置。
 - 新EPUB优先可用nav→NCX→spine，支持中文编码fragment和空行内锚点，不改变正文分块。TXT/Markdown新导入自动识别，旧书可取消重建；按原文UTF-16锚点，每书5000项/标题120码点/重建64Mi上限。大目录按唯一目标计数，超限不保存伪完整目录，保留原文/原目录及明确降级说明。
@@ -142,6 +152,7 @@
 | 1.13.0 | 2026-10-11 | 本地备份恢复、阅读书签、持久下载任务与可读能力 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.13.0) |
 | 1.14.0 | 2026-10-12 | 书内全文搜索、原文跳转与返回 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.14.0) |
 | 1.15.0 | 2026-10-12 | 章节目录、旧书重建与原文定位 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.15.0) |
+| 1.15.1 | 2026-10-12 | 官方来源VPN连接兼容修补 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.15.1) |
 | 1.7.5 | 2026-10-04 | 独立搜索、更新检查修复、完整字体无损压缩 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.5) |
 | 1.7.4 | 2026-10-04 | 统一发现搜索、规则顶部栏与刷新 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.4) |
 | 1.7.3 | 2026-10-03 | 分类规则管理、内置公开目录与更新设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.3) |
