@@ -4,7 +4,17 @@
 
 最早留存包为 1.0.0+1。未找到 0.01 安装包；早期项目配置也采用 1.0.0+1，不制造缺失版本。
 
-## 2026-10-11 数据保护、阅读书签与下载任务（1.13.0+34，当前正式版）
+## 2026-10-12 书内全文搜索与原文跳转（1.14.0+35，当前正式版）
+
+- 小说阅读器新增离线整本正文搜索，字面量匹配、可选ASCII英文大小写忽略、摘要高亮和原文锚点跳转；搜索与书签各自保存返回点。Windows支持Ctrl+F和Esc；退出或取消检索不移动阅读进度，改字号和窗口后保持目标原文。
+- 文本快照只传入工作isolate一次，分片扫描，250ms输入防抖，取消和查询代次保护；结果懒加载。查询最多128个Unicode码点，展示前200条，总正文上限64Mi UTF-16代码单元；不跨TextBlock、无图片OCR、无全书库持久索引、不搜索未下载或资料元数据。查询与摘要不写盘或上传。
+- 263项完整回归通过、8项可选采集跳过，静态分析无问题。独立只读审查1项重要横屏键盘overflow已RED→GREEN修正为整个面板滚动与懒加载结果；1项轻微基准范围问题已更正，取消数字只为界面状态确认，不能证明worker停止耗时。中英文1.4倍字号320/390/1120及横屏键盘共7布局用例通过。工作线程故障恢复未注入动态故障，不宣称该项实测。
+- Android15/API35专用模拟器仅用独立合成书库验收键盘检索、命中摘要、实际正文跳转及返回；QA包不公开。完整系统内升级安装、Windows系统文件选择器和实体设备持续性能仍待独立验收。
+- 两端正式默认入口、原应用身份/Android签名、五项字体原字节及Windows全部打包文件验证；Android ARM64 31,867,889字节，Windows ZIP 35,874,412字节。锁定67个Pub依赖公开公告查询0匹配，仅代表已知公告范围。
+- 主发布清单已验证；两端生产下载摘要检查进行中，未将该项计为完成。系统安装仍需用户确认。只增量新增五项附件，旧34个Release全部资产ID/名称/字节/摘要和原索引保持；现有35个Release、68份不同包、156个附件。私人阅读数据、签名材料、诊断、本机交接和完整源码未公开。
+- 完整此前阅读、书签、备份恢复、下载及来源要求继续继承；以下“当前/最新”按对应历史日期解释。证据：release1140-tests-final.log、release1140-analyze-final.log、RELEASE1140_REVIEW.md、release1140-review-red.log、release1140-review-green3.log、release1140-search-benchmark.json、release1140-delivery.json及release1140-cloud-update-check.json。
+
+## 2026-10-11 数据保护、阅读书签与下载任务（1.13.0+34，历史正式版）
 
 - 新增本地.lumabackup备份，包含现有书籍正文/图片、阅读进度、书签和偏好；恢复先验证摘要与结构并预览，新书按身份导入，已有书籍/进度/书签默认保留。偏好需用户主动勾选；恢复失败或中断由持久事务回滚。备份2GiB、实际解压4GiB、50000条目、单文件512MiB、清单16MiB。
 - 小说按原文锚点、漫画按原始图片位置保存书签，支持重开、跳转、返回原位置、改名及删除；每本500条，名称与摘录80个Unicode码点。内容变更的书签标示失效，不错误跳转。已修复同尺寸重排复用旧分页视图导致页码和正文不同步。
@@ -119,6 +129,7 @@
 | 1.12.1 | 2026-10-04 | 番茄榜单官方签名封面兼容修补 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.12.1) |
 | 1.12.2 | 2026-10-11 | 阅读进度保护、封面缓存及队列恢复与重试 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.12.2) |
 | 1.13.0 | 2026-10-11 | 本地备份恢复、阅读书签、持久下载任务与可读能力 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.13.0) |
+| 1.14.0 | 2026-10-12 | 书内全文搜索、原文跳转与返回 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.14.0) |
 | 1.7.5 | 2026-10-04 | 独立搜索、更新检查修复、完整字体无损压缩 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.5) |
 | 1.7.4 | 2026-10-04 | 统一发现搜索、规则顶部栏与刷新 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.4) |
 | 1.7.3 | 2026-10-03 | 分类规则管理、内置公开目录与更新设置 | Android、Windows | 2 | [已发布](https://github.com/oxygenzelda-lgtm/luma-updates/releases/tag/v1.7.3) |
