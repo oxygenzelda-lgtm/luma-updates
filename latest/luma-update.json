@@ -1,26 +1,29 @@
 {
   "schemaVersion": 1,
-  "version": "1.15.1",
-  "build": 37,
-  "publishedAt": "2026-10-12T12:26:11.692013+00:00",
+  "version": "1.16.0",
+  "build": 38,
+  "publishedAt": "2026-10-12T13:50:24.334823+00:00",
   "changes": [
-    "官方来源与封面固定白名单兼容VPN Fake-IP路由，Windows直连可获取目录与真实封面"
+    "自定义书单、可见结果多选和批量归组",
+    "显式未读／在读／已读分类，不改变原阅读进度或书签；从头阅读是单独动作",
+    "兼容旧备份，新增书单／阅读状态恢复开关与事务回滚保护"
   ],
   "fixes": [
-    "修复VPN假DNS让全部来源被误判为不安全地址；普通规则、私网与HTTPS检查保持",
-    "仅对固定官方HTTPS主机和443放行198.18/15路由，证书/SNI/重定向逐跳校验保持"
+    "Android封面／正文独立请求队列，排队计入期限，超时取消原生任务",
+    "封面整体等待15秒，取图请求10秒；过期响应不覆盖重试内存或磁盘缓存",
+    "连接超时、HTTP拒绝和无公开正文分别说明"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.15.1/Luma-1.15.1-Android-arm64.apk",
-      "bytes": 31893361,
-      "sha256": "efd37f845e95c9a87b394dd3b1c34c8de65647b763424c5ffa5a8b32c39de20a"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.16.0/Luma-1.16.0-Android-arm64.apk",
+      "bytes": 31932621,
+      "sha256": "78f262cbf1435233998d7822c90a30d4b15322d83dfb44313a0048b40ac2d826"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.15.1/Luma-1.15.1-Windows-x64.zip",
-      "bytes": 35904605,
-      "sha256": "ae64e4f10b2c1d732325171a24011ea8a719c6a1467eeb701e8f495d5f69ebfc"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.16.0/Luma-1.16.0-Windows-x64.zip",
+      "bytes": 35942410,
+      "sha256": "cc5db847ba1bcfdb0d923bf9e12d4383213689c3cc54346e367040e0335d61f9"
     }
   }
 }
