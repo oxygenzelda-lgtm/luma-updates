@@ -1,30 +1,31 @@
 {
   "schemaVersion": 1,
-  "version": "1.17.0",
-  "build": 39,
-  "publishedAt": "2026-10-13T01:54:18.003273+00:00",
+  "version": "1.18.0",
+  "build": 40,
+  "publishedAt": "2026-10-13T11:35:38.190955+00:00",
   "changes": [
-    "新增Kakuyomu、NOVEL DAYS公开小说及WEBTOON公开首章漫画，保留原有五个来源",
-    "下载任务持久暂停、手动继续与排队顺序调整",
-    "来源分阶段诊断、取消与用户选择的本机摘要保存",
-    "大书库懒加载行与只读选择视图"
+    "规则导入前显示新增、可更新、相同、重复、保护与不兼容项，支持查看全部批次",
+    "新增版本化Luma规则包与SHA256内容校验，兼容旧单规则JSON和数组",
+    "默认保留已有规则，明确更新时保留用户启用状态",
+    "书源模型、仓储、缓存端口与备份校验分离，应用会话共享仓储"
   ],
   "fixes": [
-    "官方请求初始与每次跳转都核对固定域名白名单",
-    "恢复漫画下载修复损坏暂存图片，相同内容重复入库保留原书",
-    "小说正文保留相邻段落边界"
+    "过期、取消和其他会话的预览拒绝覆盖；编译内置和已移除内置ID受保护",
+    "复杂JSON路径、脚本、登录、图像解码及分页要求提前提示限制",
+    "规则预览不触发旧文件迁移；进度仓储拒绝跨目录注入",
+    "保留原规则ID、下载检查点摘要、旧规则schema2及阅读数据格式"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.17.0/Luma-1.17.0-Android-arm64.apk",
-      "bytes": 31987813,
-      "sha256": "c7f652a202d4801e4b1e5a1574115d5f84b145d284685798e40c245f7f1363ea"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.18.0/Luma-1.18.0-Android-arm64.apk",
+      "bytes": 32002517,
+      "sha256": "1de825c16c871911c74adfcf1ab3820dc7e7415807fb4c4ba49e9ccdaa202a07"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.17.0/Luma-1.17.0-Windows-x64.zip",
-      "bytes": 36841240,
-      "sha256": "d6dbd63a1c1a7e61a76a8299582e4115a0203fcaac8490dc1950159711d09e6e"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.18.0/Luma-1.18.0-Windows-x64.zip",
+      "bytes": 36856864,
+      "sha256": "bfb69ee6fff8bfe7edcbb50790140dcbab2dd471f741603a7aaba1fbdff598c6"
     }
   }
 }
