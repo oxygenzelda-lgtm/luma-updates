@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "version": "1.18.0",
-  "build": 40,
-  "publishedAt": "2026-10-13T11:35:38.190955+00:00",
+  "version": "1.19.0",
+  "build": 41,
+  "publishedAt": "2026-10-13T23:55:14.254450+00:00",
   "changes": [
-    "规则导入前显示新增、可更新、相同、重复、保护与不兼容项，支持查看全部批次",
-    "新增版本化Luma规则包与SHA256内容校验，兼容旧单规则JSON和数组",
-    "默认保留已有规则，明确更新时保留用户启用状态",
-    "书源模型、仓储、缓存端口与备份校验分离，应用会话共享仓储"
+    "发现和详情增加在线阅读入口；小说按章加载、漫画按需取图，离线下载另行选择",
+    "MangaDex新增中文译文与英文译文入口；同一平台的两种语言配置，支持实时API搜索、书目翻页和目录分批加载",
+    "已有飞卢公开章节、Kakuyomu、DAYS NEO与WEBTOON接入在线会话；已缓存内容可断网重开",
+    "发现优先可读来源，逐来源显示返回书目；标记缓存／更新状态和时间，前台恢复超过五分钟再刷新，保留原筛选选择"
   ],
   "fixes": [
-    "过期、取消和其他会话的预览拒绝覆盖；编译内置和已移除内置ID受保护",
-    "复杂JSON路径、脚本、登录、图像解码及分页要求提前提示限制",
-    "规则预览不触发旧文件迁移；进度仓储拒绝跨目录注入",
-    "保留原规则ID、下载检查点摘要、旧规则schema2及阅读数据格式"
+    "在线会话独立保存位置，不自动入库或覆盖离线书籍进度；语言身份避免不同译文互相覆盖",
+    "漫画单页失败可重试，支持逐页／条漫、阅读方向、缩放和页位恢复；WEBTOON遵循官网明确提供的相邻章节",
+    "取消、超时和离页释放当前请求；512MiB内容缓存、32MiB目录清单及16MiB／16MP图片限额",
+    "独立来源页下载漫画会创建校验缓存；来源失败不丢弃其他可用书目"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.18.0/Luma-1.18.0-Android-arm64.apk",
-      "bytes": 32002517,
-      "sha256": "1de825c16c871911c74adfcf1ab3820dc7e7415807fb4c4ba49e9ccdaa202a07"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.19.0/Luma-1.19.0-Android-arm64.apk",
+      "bytes": 32057433,
+      "sha256": "9f8387a2ea115ae14503cd78dc6a07e76f03b8d4bcb8ad55a8eff78b1b44e674"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.18.0/Luma-1.18.0-Windows-x64.zip",
-      "bytes": 36856864,
-      "sha256": "bfb69ee6fff8bfe7edcbb50790140dcbab2dd471f741603a7aaba1fbdff598c6"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.19.0/Luma-1.19.0-Windows-x64.zip",
+      "bytes": 36924322,
+      "sha256": "de5e450ee81bebba854b63bd7ffaca55c1966277c44f9336f978b3c3937d800f"
     }
   }
 }
