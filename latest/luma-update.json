@@ -1,29 +1,30 @@
 {
   "schemaVersion": 1,
-  "version": "1.16.0",
-  "build": 38,
-  "publishedAt": "2026-10-12T13:50:24.334823+00:00",
+  "version": "1.17.0",
+  "build": 39,
+  "publishedAt": "2026-10-13T01:54:18.003273+00:00",
   "changes": [
-    "自定义书单、可见结果多选和批量归组",
-    "显式未读／在读／已读分类，不改变原阅读进度或书签；从头阅读是单独动作",
-    "兼容旧备份，新增书单／阅读状态恢复开关与事务回滚保护"
+    "新增Kakuyomu、NOVEL DAYS公开小说及WEBTOON公开首章漫画，保留原有五个来源",
+    "下载任务持久暂停、手动继续与排队顺序调整",
+    "来源分阶段诊断、取消与用户选择的本机摘要保存",
+    "大书库懒加载行与只读选择视图"
   ],
   "fixes": [
-    "Android封面／正文独立请求队列，排队计入期限，超时取消原生任务",
-    "封面整体等待15秒，取图请求10秒；过期响应不覆盖重试内存或磁盘缓存",
-    "连接超时、HTTP拒绝和无公开正文分别说明"
+    "官方请求初始与每次跳转都核对固定域名白名单",
+    "恢复漫画下载修复损坏暂存图片，相同内容重复入库保留原书",
+    "小说正文保留相邻段落边界"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.16.0/Luma-1.16.0-Android-arm64.apk",
-      "bytes": 31932621,
-      "sha256": "78f262cbf1435233998d7822c90a30d4b15322d83dfb44313a0048b40ac2d826"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.17.0/Luma-1.17.0-Android-arm64.apk",
+      "bytes": 31987813,
+      "sha256": "c7f652a202d4801e4b1e5a1574115d5f84b145d284685798e40c245f7f1363ea"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.16.0/Luma-1.16.0-Windows-x64.zip",
-      "bytes": 35942410,
-      "sha256": "cc5db847ba1bcfdb0d923bf9e12d4383213689c3cc54346e367040e0335d61f9"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.17.0/Luma-1.17.0-Windows-x64.zip",
+      "bytes": 36841240,
+      "sha256": "d6dbd63a1c1a7e61a76a8299582e4115a0203fcaac8490dc1950159711d09e6e"
     }
   }
 }
