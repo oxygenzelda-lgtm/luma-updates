@@ -1,31 +1,33 @@
 {
   "schemaVersion": 1,
-  "version": "1.19.0",
-  "build": 41,
-  "publishedAt": "2026-10-13T23:55:14.254450+00:00",
+  "version": "1.20.0",
+  "build": 43,
+  "publishedAt": "2026-10-15T08:52:46.569300+00:00",
   "changes": [
-    "发现和详情增加在线阅读入口；小说按章加载、漫画按需取图，离线下载另行选择",
-    "MangaDex新增中文译文与英文译文入口；同一平台的两种语言配置，支持实时API搜索、书目翻页和目录分批加载",
-    "已有飞卢公开章节、Kakuyomu、DAYS NEO与WEBTOON接入在线会话；已缓存内容可断网重开",
-    "发现优先可读来源，逐来源显示返回书目；标记缓存／更新状态和时间，前台恢复超过五分钟再刷新，保留原筛选选择"
+    "在线小说可主动开启下一章预取，默认关闭，仅缓存下一公开文本章",
+    "统一阅读会话与有界共享请求调度，按订阅归属取消",
+    "控件材质提供实色、轻量透明与柔和玻璃三档"
   ],
   "fixes": [
-    "在线会话独立保存位置，不自动入库或覆盖离线书籍进度；语言身份避免不同译文互相覆盖",
-    "漫画单页失败可重试，支持逐页／条漫、阅读方向、缩放和页位恢复；WEBTOON遵循官网明确提供的相邻章节",
-    "取消、超时和离页释放当前请求；512MiB内容缓存、32MiB目录清单及16MiB／16MP图片限额",
-    "独立来源页下载漫画会创建校验缓存；来源失败不丢弃其他可用书目"
+    "切章与刷新失败保留当前正文和锚点，旧响应不能覆盖新章节",
+    "漫画视口和邻页加载，限制等比解码尺寸并释放离页解码缓存",
+    "图片地址续签避免重入已占满的调度队列",
+    "断网发现页显示缓存，成功更新时间与刷新尝试时间分离",
+    "目录追加与章节请求交错时保留新目录和跳转目标，移除的目标停止加载",
+    "目录弹层随会话更新，按章节身份选择和标记当前位置",
+    "目录分页与章节完成分开取消，旧页失效后可以重试，不再永久转圈"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.19.0/Luma-1.19.0-Android-arm64.apk",
-      "bytes": 32057433,
-      "sha256": "9f8387a2ea115ae14503cd78dc6a07e76f03b8d4bcb8ad55a8eff78b1b44e674"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.20.0/Luma-1.20.0-Android-arm64.apk",
+      "bytes": 32791157,
+      "sha256": "7784ce6dc843992d558167a6f7d9476ec4bdc6fb362de1a1a4f0ef2b386dbdd8"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.19.0/Luma-1.19.0-Windows-x64.zip",
-      "bytes": 36924322,
-      "sha256": "de5e450ee81bebba854b63bd7ffaca55c1966277c44f9336f978b3c3937d800f"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.20.0/Luma-1.20.0-Windows-x64.zip",
+      "bytes": 36959849,
+      "sha256": "10013864f5e19b303499c5500b0285181c2c4dec7c5e725b3e57ee0175611ca3"
     }
   }
 }
