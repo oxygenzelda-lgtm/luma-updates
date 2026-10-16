@@ -1027,7 +1027,7 @@
     "date": "2026-10-16",
     "build": 49,
     "title": "书源连续加载与玻璃交互",
-    "status": "release_prepared",
+    "status": "published_verified",
     "changes": [
       "番茄发现改用官网公开书库真实分页，保持原顺序追加不同作品",
       "阅读底栏集中布局并提高遮盖度，深色面板改善文字对比",
