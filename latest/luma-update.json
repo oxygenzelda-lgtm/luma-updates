@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "version": "1.23.1",
-  "build": 50,
-  "publishedAt": "2026-10-16T08:50:25.332672+00:00",
+  "version": "1.25.0",
+  "build": 52,
+  "publishedAt": "2026-10-16T15:19:50.377414+00:00",
   "changes": [
-    "首页小说／漫画分类栏统一玻璃按压与跟手拖动，拖动目标的文字、图标随之变色",
-    "作品详情移除重复能力说明，主操作简化为阅读、收藏；标题与标签集中排列",
-    "在线阅读精简重复翻页按钮和章节数字；漫画模式与方向收进顶部阅读设置"
+    "搜索输入集中在顶栏，小说使用紧凑信息列表，漫画使用封面网格，匹配关键词高亮",
+    "输入时显示本机建议，明确提交后查询书源；快源分批显示，来源状态折叠到结果后",
+    "品牌启动标识与阅读空间提示，保留离线字体校验、错误重试及减少动画",
+    "统一二三级设置与工具页面布局、玻璃层次，阅读偏好即时保存，低频操作集中"
   ],
   "fixes": [
-    "修复实际首页分类栏仍使用旧自绘实现、公共玻璃控件没有接线的问题",
-    "拖动取消恢复原选择，松手只提交一次，不再误切换",
-    "在线漫画分页模式左右边缘点击翻页、中间点击显隐工具栏，隐藏状态仍可翻页",
-    "漫画放大后防止边缘误翻页，中央显隐保持；方向及分页／条漫切换保持当前图页",
-    "目录明确命名，继续按真实章节身份定位；失败重试保持正文位置与工具栏状态"
+    "修复悬浮导航遮挡底部设置入口，正文按导航真实高度保留区域",
+    "修改搜索、切换范围或退出时取消旧请求，重试失败保留同查询已获取作品",
+    "修复阅读或详情返回后搜索键盘自动弹出，手动点输入框仍可编辑",
+    "修复特殊Unicode标题高亮越界，以及窄屏大字号启动错误与等待提示裁切"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.23.1/Luma-1.23.1-Android-arm64.apk",
-      "bytes": 32824269,
-      "sha256": "2b03ed7b1af6dd031ea33abb66044cef64a9ff07f26f237bf8603e1bc2577b55"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.25.0/Luma-1.25.0-Android-arm64.apk",
+      "bytes": 32817245,
+      "sha256": "2e6034e552ebaf79d08a989f530284985ed4d7831827cb948ccd7d13b52f653f"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.23.1/Luma-1.23.1-Windows-x64.zip",
-      "bytes": 36998709,
-      "sha256": "dc5d9fd7bba4509d754c745c763daf6a365c331cea49f1e8ff07926cddbe0617"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.25.0/Luma-1.25.0-Windows-x64.zip",
+      "bytes": 36989056,
+      "sha256": "4c1c8de8989a955d57b23e60b5ac0d7d5f9950a951c19add50ab6f92df303ec3"
     }
   }
 }
