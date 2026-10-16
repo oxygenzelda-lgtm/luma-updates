@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "version": "1.23.0",
-  "build": 49,
-  "publishedAt": "2026-10-16T07:58:30.989294+00:00",
+  "version": "1.23.1",
+  "build": 50,
+  "publishedAt": "2026-10-16T08:50:25.332672+00:00",
   "changes": [
-    "番茄发现改用官网公开书库真实分页，保持原顺序追加不同作品",
-    "阅读底栏集中布局并提高遮盖度，深色面板改善文字对比",
-    "加号、搜索、分类、筛选及设置分组扩展玻璃材质；交互控件按压放大、拖动形变与回弹",
-    "底部导航滑块跟随横向拖动，松手提交目标；减少动画模式关闭形变"
+    "首页小说／漫画分类栏统一玻璃按压与跟手拖动，拖动目标的文字、图标随之变色",
+    "作品详情移除重复能力说明，主操作简化为阅读、收藏；标题与标签集中排列",
+    "在线阅读精简重复翻页按钮和章节数字；漫画模式与方向收进顶部阅读设置"
   ],
   "fixes": [
-    "修复官网SSR中的undefined字段导致番茄列表解析失败",
-    "短暂连接失败和超时在同一页短重试一次，失败保留已有内容，刷新取消旧请求",
-    "Android原生网络错误保留HTTP状态与连接、超时、TLS和取消类型，重试及末页处理与执行器一致",
-    "Kakuyomu仅后续无搜索词榜单404按末页处理，首页、搜索与403继续显示真实错误"
+    "修复实际首页分类栏仍使用旧自绘实现、公共玻璃控件没有接线的问题",
+    "拖动取消恢复原选择，松手只提交一次，不再误切换",
+    "在线漫画分页模式左右边缘点击翻页、中间点击显隐工具栏，隐藏状态仍可翻页",
+    "漫画放大后防止边缘误翻页，中央显隐保持；方向及分页／条漫切换保持当前图页",
+    "目录明确命名，继续按真实章节身份定位；失败重试保持正文位置与工具栏状态"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.23.0/Luma-1.23.0-Android-arm64.apk",
-      "bytes": 32824041,
-      "sha256": "64573c05e1c76dcf470db2e1a584cc477162872d5044f8f8075efd372c2c0207"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.23.1/Luma-1.23.1-Android-arm64.apk",
+      "bytes": 32824269,
+      "sha256": "2b03ed7b1af6dd031ea33abb66044cef64a9ff07f26f237bf8603e1bc2577b55"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.23.0/Luma-1.23.0-Windows-x64.zip",
-      "bytes": 36996628,
-      "sha256": "182bdfbeccdb44beb69b7a4b8d4d3526f0607dbbdc7e6a2b649b4885b5232c18"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.23.1/Luma-1.23.1-Windows-x64.zip",
+      "bytes": 36998709,
+      "sha256": "dc5d9fd7bba4509d754c745c763daf6a365c331cea49f1e8ff07926cddbe0617"
     }
   }
 }
