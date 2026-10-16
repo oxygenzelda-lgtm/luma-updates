@@ -1,33 +1,34 @@
 {
   "schemaVersion": 1,
-  "version": "1.20.0",
-  "build": 43,
-  "publishedAt": "2026-10-15T08:52:46.569300+00:00",
+  "version": "1.21.0",
+  "build": 46,
+  "publishedAt": "2026-10-15T23:59:55.778778+00:00",
   "changes": [
-    "在线小说可主动开启下一章预取，默认关闭，仅缓存下一公开文本章",
-    "统一阅读会话与有界共享请求调度，按订阅归属取消",
-    "控件材质提供实色、轻量透明与柔和玻璃三档"
+    "番茄公开章节按网页公开字体在线显示，正文和字体缓存重开",
+    "设置具体选项搜索、路径与定位，恢复控件材质入口",
+    "酷安参考的应用级材质层次，覆盖搜索、导航、设置、筛选、目录及阅读控制"
   ],
   "fixes": [
-    "切章与刷新失败保留当前正文和锚点，旧响应不能覆盖新章节",
-    "漫画视口和邻页加载，限制等比解码尺寸并释放离页解码缓存",
-    "图片地址续签避免重入已占满的调度队列",
-    "断网发现页显示缓存，成功更新时间与刷新尝试时间分离",
-    "目录追加与章节请求交错时保留新目录和跳转目标，移除的目标停止加载",
-    "目录弹层随会话更新，按章节身份选择和标记当前位置",
-    "目录分页与章节完成分开取消，旧页失效后可以重试，不再永久转圈"
+    "番茄最近更新快捷链接不再排在第一章前，长目录保留前1000条",
+    "修复混合CJK与私用字形排版缺字，保留原始内容锚点",
+    "日文ruby读音不再混入正文",
+    "排除飞卢、资料型Bangumi及当前403的Narou；保留本地书籍与用户源身份",
+    "发现可读偏好移至设置，搜索提交明确，加载期间提交不丢失",
+    "搜索结果集中操作，发现固定顶部与滚动内容之间柔和渐隐",
+    "正文与字体引用绑定正文SHA256，刷新中断及缓存部分写入失败时拒绝错配离线内容",
+    "番茄分类只读取真实名称，拒绝内部对象字段字符串并清理旧缓存坏标签"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.20.0/Luma-1.20.0-Android-arm64.apk",
-      "bytes": 32791157,
-      "sha256": "7784ce6dc843992d558167a6f7d9476ec4bdc6fb362de1a1a4f0ef2b386dbdd8"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.21.0/Luma-1.21.0-Android-arm64.apk",
+      "bytes": 32807141,
+      "sha256": "e686ce127cd92f79ab1f5d9cd018b986337374a2345325cdb1b8e7e07b9eb5c9"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.20.0/Luma-1.20.0-Windows-x64.zip",
-      "bytes": 36959849,
-      "sha256": "10013864f5e19b303499c5500b0285181c2c4dec7c5e725b3e57ee0175611ca3"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.21.0/Luma-1.21.0-Windows-x64.zip",
+      "bytes": 36979387,
+      "sha256": "cf87edd028d1504d1a89157e981d0d5c1379f0f6c399311f770f1355f6789ac1"
     }
   }
 }
