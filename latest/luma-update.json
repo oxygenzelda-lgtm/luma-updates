@@ -1,30 +1,31 @@
 {
   "schemaVersion": 1,
-  "version": "1.22.0",
-  "build": 48,
-  "publishedAt": "2026-10-16T05:20:06.495967+00:00",
+  "version": "1.23.0",
+  "build": 49,
+  "publishedAt": "2026-10-16T07:58:30.989294+00:00",
   "changes": [
-    "在线小说与漫画统一工具栏显隐，隐藏后保持正文区域与位置",
-    "重写中英文使用帮助，区分翻页、切章、在线缓存和下载"
+    "番茄发现改用官网公开书库真实分页，保持原顺序追加不同作品",
+    "阅读底栏集中布局并提高遮盖度，深色面板改善文字对比",
+    "加号、搜索、分类、筛选及设置分组扩展玻璃材质；交互控件按压放大、拖动形变与回弹",
+    "底部导航滑块跟随横向拖动，松手提交目标；减少动画模式关闭形变"
   ],
   "fixes": [
-    "发现下拉刷新只保留一套主要反馈，移除叠加进度条及刷新期间的页底转圈",
-    "移除在线小说的无效本地目录菜单，仅保留实际在线目录",
-    "在线漫画右向左键盘方向与本地漫画一致；桌面保留一个隐藏入口",
-    "切章失败与重试提示不再挤压正文，隐藏状态可跨失败重试保留",
-    "大字号分页状态行防溢出，过长工具栏可自身滚动"
+    "修复官网SSR中的undefined字段导致番茄列表解析失败",
+    "短暂连接失败和超时在同一页短重试一次，失败保留已有内容，刷新取消旧请求",
+    "Android原生网络错误保留HTTP状态与连接、超时、TLS和取消类型，重试及末页处理与执行器一致",
+    "Kakuyomu仅后续无搜索词榜单404按末页处理，首页、搜索与403继续显示真实错误"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.22.0/Luma-1.22.0-Android-arm64.apk",
-      "bytes": 32813137,
-      "sha256": "99a32228295972bf28e8a64f062dcbf9496ff99d045dfb9b1509823487bd0819"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.23.0/Luma-1.23.0-Android-arm64.apk",
+      "bytes": 32824041,
+      "sha256": "64573c05e1c76dcf470db2e1a584cc477162872d5044f8f8075efd372c2c0207"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.22.0/Luma-1.22.0-Windows-x64.zip",
-      "bytes": 36983504,
-      "sha256": "607bd93f1cd2bd461bae46c4dcba280446bfcdcf2b586b60e26518a82bd99f52"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.23.0/Luma-1.23.0-Windows-x64.zip",
+      "bytes": 36996628,
+      "sha256": "182bdfbeccdb44beb69b7a4b8d4d3526f0607dbbdc7e6a2b649b4885b5232c18"
     }
   }
 }
