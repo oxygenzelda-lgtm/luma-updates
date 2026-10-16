@@ -1,34 +1,31 @@
 {
   "schemaVersion": 1,
-  "version": "1.21.0",
-  "build": 46,
-  "publishedAt": "2026-10-15T23:59:55.778778+00:00",
+  "version": "1.21.1",
+  "build": 47,
+  "publishedAt": "2026-10-16T02:42:53.093117+00:00",
   "changes": [
-    "番茄公开章节按网页公开字体在线显示，正文和字体缓存重开",
-    "设置具体选项搜索、路径与定位，恢复控件材质入口",
-    "酷安参考的应用级材质层次，覆盖搜索、导航、设置、筛选、目录及阅读控制"
+    "发现触底提前续载并稳定追加，移除500项截断和统一20页限制",
+    "发现页移除常驻更新状态与时间，设置常用项简洁统一，备份下载收进更多工具"
   ],
   "fixes": [
-    "番茄最近更新快捷链接不再排在第一章前，长目录保留前1000条",
-    "修复混合CJK与私用字形排版缺字，保留原始内容锚点",
-    "日文ruby读音不再混入正文",
-    "排除飞卢、资料型Bangumi及当前403的Narou；保留本地书籍与用户源身份",
-    "发现可读偏好移至设置，搜索提交明确，加载期间提交不丢失",
-    "搜索结果集中操作，发现固定顶部与滚动内容之间柔和渐隐",
-    "正文与字体引用绑定正文SHA256，刷新中断及缓存部分写入失败时拒绝错配离线内容",
-    "番茄分类只读取真实名称，拒绝内部对象字段字符串并清理旧缓存坏标签"
+    "新书不再先插顶部再重排，保留原作品顺序及滚动位置",
+    "失败书源独立冷却，健康来源继续加载；刷新取消旧请求，缓存写入不阻塞显示",
+    "WEBTOON分类与DAYS NEO最新榜单按实际完整列表分批，短时缓存避免重复抓首页",
+    "严格筛选无匹配时限制无人操作的自动补屏，避免连续无用网络请求",
+    "顶部渐隐改为小范围叠层，静态普通控件取消实时背景模糊",
+    "封面缩略图限制384×1024，磁盘裁剪合并；番茄明文榜单减少详情补取"
   ],
   "references": [],
   "assets": {
     "androidArm64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.21.0/Luma-1.21.0-Android-arm64.apk",
-      "bytes": 32807141,
-      "sha256": "e686ce127cd92f79ab1f5d9cd018b986337374a2345325cdb1b8e7e07b9eb5c9"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.21.1/Luma-1.21.1-Android-arm64.apk",
+      "bytes": 32808945,
+      "sha256": "bd6291864713e49eb7848907c293ace874e61e4bff65eca6e5e1b20a5198ed42"
     },
     "windowsX64": {
-      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.21.0/Luma-1.21.0-Windows-x64.zip",
-      "bytes": 36979387,
-      "sha256": "cf87edd028d1504d1a89157e981d0d5c1379f0f6c399311f770f1355f6789ac1"
+      "url": "https://github.com/oxygenzelda-lgtm/luma-updates/releases/download/v1.21.1/Luma-1.21.1-Windows-x64.zip",
+      "bytes": 36982683,
+      "sha256": "315462fe93ed8e1292b9faa63b03c032f2480c1b41d46b4fa2e7ae9a8fb42e9b"
     }
   }
 }
